@@ -196,6 +196,7 @@
      * ============================================================================
      */
     const DB_STORAGE_KEY = 'zagafox_relational_db_v2';
+    const LAST_REMOTE_TS_KEY = 'zagafox_remote_db_ts_v1';
     const VISITOR_SESSION_KEY = 'zagafox_visitor_scoped_token_v2';
     const ADMIN_SESSION_KEY = 'zagafox_admin_auth_token_v2';
     const RATE_LIMIT_KEY = 'zagafox_rate_limit_v2';
@@ -876,8 +877,10 @@
     let DB = {
       sections: [],
       tests: [],
-      questions: []
+      questions: [],
+      updated_at_ts: 0
     };
+    let remoteDbStatus = 'unknown'; // 'synced' | 'missing' | 'unknown'
 
     function formatDateDDMMYYYY(date = new Date()) {
       const dd = String(date.getDate()).padStart(2, '0');
@@ -890,10 +893,13 @@
       return `${prefix}_${Math.random().toString(36).substring(2, 9)}_${Date.now().toString(36)}`;
     }
 
-    function saveDatabase() {
+    function saveDatabase(preserveTimestamp = false) {
       DB.tests.forEach(t => {
         t.question_count = DB.questions.filter(q => q.test_id === t.id).length;
       });
+      if (!preserveTimestamp) {
+        DB.updated_at_ts = Date.now();
+      }
       safeLocalSet(DB_STORAGE_KEY, JSON.stringify(DB));
     }
 
@@ -901,9 +907,66 @@
       DB = {
         sections: [],
         tests: [],
-        questions: []
+        questions: [],
+        updated_at_ts: 0
       };
-      saveDatabase();
+      saveDatabase(true);
+    }
+
+    async function syncFromRemoteDbJson(forceOverwrite = false) {
+      if (window.location.protocol !== 'https:' && window.location.protocol !== 'http:') {
+        return { ok: false, reason: 'local' };
+      }
+      try {
+        const resp = await fetch(`./db.json?t=${Date.now()}`, { cache: 'no-store' });
+        if (!resp.ok) {
+          remoteDbStatus = 'missing';
+          return { ok: false, reason: 'not_found' };
+        }
+        const remoteData = await resp.json();
+        if (!remoteData || !Array.isArray(remoteData.sections) || !Array.isArray(remoteData.tests) || !Array.isArray(remoteData.questions)) {
+          remoteDbStatus = 'missing';
+          return { ok: false, reason: 'invalid' };
+        }
+
+        const remoteTs = Number(remoteData.updated_at_ts) || 1;
+        const lastSyncedTs = Number(safeLocalGet(LAST_REMOTE_TS_KEY) || 0);
+        const localTs = Number(DB.updated_at_ts || 0);
+        const isLocalEmpty = DB.sections.length === 0 && DB.tests.length === 0 && DB.questions.length === 0;
+
+        const shouldApply = forceOverwrite ||
+          isLocalEmpty ||
+          remoteTs > localTs ||
+          (!isAdminAuthenticated() && remoteTs !== lastSyncedTs);
+
+        if (shouldApply) {
+          DB = {
+            sections: remoteData.sections,
+            tests: remoteData.tests,
+            questions: remoteData.questions,
+            updated_at_ts: remoteTs
+          };
+          saveDatabase(true);
+          safeLocalSet(LAST_REMOTE_TS_KEY, String(remoteTs));
+        }
+
+        remoteDbStatus = 'synced';
+        return { ok: true, applied: shouldApply };
+      } catch {
+        remoteDbStatus = 'missing';
+        return { ok: false, reason: 'network' };
+      }
+    }
+
+    async function manualSyncFromRemoteDb() {
+      const res = await syncFromRemoteDbJson(true);
+      if (res.ok) {
+        ephemeralPlainPasswords.clear();
+        showToast(`База обновлена из db.json (панелей: ${DB.sections.length}, вопросов: ${DB.questions.length}).`, 'success');
+        renderApp();
+      } else {
+        showToast('Файл db.json ещё не найден в репозитории рядом с index.html.', 'error');
+      }
     }
 
     async function initDatabase() {
@@ -922,17 +985,24 @@
       } else {
         await buildSeedDatabase();
       }
+
+      // Автоматически подгружаем общий db.json из репозитория GitHub Pages
+      await syncFromRemoteDbJson(false);
     }
 
     /**
-     * Экспорт и импорт базы данных (.json)
+     * Экспорт и импорт базы данных (db.json)
      */
     function exportDatabaseJson() {
       try {
+        const exportTs = Date.now();
+        DB.updated_at_ts = exportTs;
+        saveDatabase(true);
         const payload = {
           app: 'ZAGAFOX',
           version: 2,
-          exported_at: new Date().toISOString(),
+          updated_at_ts: exportTs,
+          exported_at: new Date(exportTs).toISOString(),
           sections: DB.sections,
           tests: DB.tests,
           questions: DB.questions
@@ -940,14 +1010,13 @@
         const blob = new Blob([JSON.stringify(payload, null, 2)], { type: 'application/json;charset=utf-8' });
         const url = URL.createObjectURL(blob);
         const a = document.createElement('a');
-        const dateStamp = new Date().toISOString().slice(0, 10);
         a.href = url;
-        a.download = `zagafox-backup-${dateStamp}.json`;
+        a.download = 'db.json';
         document.body.appendChild(a);
         a.click();
         document.body.removeChild(a);
         setTimeout(() => URL.revokeObjectURL(url), 1000);
-        showToast(`База экспортирована (панелей: ${DB.sections.length}, файлов: ${DB.tests.length}, вопросов: ${DB.questions.length}).`, 'success');
+        showToast(`Файл db.json скачан (панелей: ${DB.sections.length}, вопросов: ${DB.questions.length}). Загрузите его в репозиторий GitHub рядом с index.html.`, 'success');
       } catch (err) {
         showToast(`Не удалось экспортировать базу: ${err.message}`, 'error');
       }
@@ -2488,23 +2557,36 @@
               </div>
             </div>
 
-            <!-- Панель резервного копирования -->
+            <!-- Панель общей базы db.json и резервного копирования -->
             <div class="pt-4 border-t border-purple-500/20 flex flex-wrap items-center justify-between gap-3">
-              <div class="text-xs text-slate-400">
-                Резервное копирование: переносите панели, пароли и вопросы между браузерами и устройствами.
+              <div class="text-xs text-slate-300 flex flex-wrap items-center gap-2">
+                <span class="px-2 py-0.5 rounded-md font-mono text-[11px] font-bold ${
+                  remoteDbStatus === 'synced'
+                    ? 'bg-emerald-500/20 text-emerald-300 border border-emerald-400/35'
+                    : 'bg-amber-500/15 text-amber-200 border border-amber-400/30'
+                }">
+                  ${remoteDbStatus === 'synced' ? 'db.json подключён' : 'db.json не найден'}
+                </span>
+                <span class="text-slate-400">Чтобы изменения появились на всех телефонах, нажмите «Экспорт db.json» и загрузите файл в GitHub рядом с index.html.</span>
               </div>
               <div class="flex flex-wrap items-center gap-2">
                 <button onclick="exportDatabaseJson()" class="px-3.5 py-2 rounded-xl bg-purple-500/15 hover:bg-purple-500/25 border border-purple-400/35 text-purple-200 text-xs font-bold flex items-center gap-1.5 cursor-pointer">
                   <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
                   </svg>
-                  <span>Экспорт базы (.json)</span>
+                  <span>Экспорт db.json</span>
                 </button>
                 <button onclick="triggerImportDatabase()" class="px-3.5 py-2 rounded-xl bg-cyan-500/15 hover:bg-cyan-500/25 border border-cyan-400/35 text-cyan-200 text-xs font-bold flex items-center gap-1.5 cursor-pointer">
                   <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12" />
                   </svg>
                   <span>Импорт базы (.json)</span>
+                </button>
+                <button onclick="manualSyncFromRemoteDb()" class="px-3.5 py-2 rounded-xl bg-emerald-500/15 hover:bg-emerald-500/25 border border-emerald-400/35 text-emerald-200 text-xs font-bold flex items-center gap-1.5 cursor-pointer">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                  </svg>
+                  <span>Загрузить из db.json</span>
                 </button>
               </div>
             </div>
