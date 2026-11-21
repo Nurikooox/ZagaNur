@@ -197,6 +197,11 @@
      */
     const DB_STORAGE_KEY = 'zagafox_relational_db_v2';
     const LAST_REMOTE_TS_KEY = 'zagafox_remote_db_ts_v1';
+    const GH_SYNC_CONFIG_KEY = 'zagafox_gh_sync_config_v1';
+    const DEFAULT_GH_OWNER = 'Nurikooox';
+    const DEFAULT_GH_REPO = 'ZagaNur';
+    const DEFAULT_GH_BRANCH = 'main';
+    const DEFAULT_GH_PATH = 'db.json';
     const VISITOR_SESSION_KEY = 'zagafox_visitor_scoped_token_v2';
     const ADMIN_SESSION_KEY = 'zagafox_admin_auth_token_v2';
     const RATE_LIMIT_KEY = 'zagafox_rate_limit_v2';
@@ -881,6 +886,62 @@
       updated_at_ts: 0
     };
     let remoteDbStatus = 'unknown'; // 'synced' | 'missing' | 'unknown'
+    let ghAutoPushTimer = null;
+    let ghPushInFlight = false;
+    let ghPushPending = false;
+    let ghLastPushMessage = '';
+
+    function getGitHubSyncConfig() {
+      try {
+        const raw = safeLocalGet(GH_SYNC_CONFIG_KEY);
+        const cfg = raw ? JSON.parse(raw) : {};
+        return {
+          owner: (cfg.owner || DEFAULT_GH_OWNER).trim(),
+          repo: (cfg.repo || DEFAULT_GH_REPO).trim(),
+          branch: (cfg.branch || DEFAULT_GH_BRANCH).trim(),
+          path: (cfg.path || DEFAULT_GH_PATH).trim(),
+          token: (cfg.token || '').trim()
+        };
+      } catch {
+        return {
+          owner: DEFAULT_GH_OWNER,
+          repo: DEFAULT_GH_REPO,
+          branch: DEFAULT_GH_BRANCH,
+          path: DEFAULT_GH_PATH,
+          token: ''
+        };
+      }
+    }
+
+    function saveGitHubSyncConfig(cfg) {
+      safeLocalSet(GH_SYNC_CONFIG_KEY, JSON.stringify({
+        owner: (cfg.owner || DEFAULT_GH_OWNER).trim(),
+        repo: (cfg.repo || DEFAULT_GH_REPO).trim(),
+        branch: (cfg.branch || DEFAULT_GH_BRANCH).trim(),
+        path: (cfg.path || DEFAULT_GH_PATH).trim(),
+        token: (cfg.token || '').trim()
+      }));
+    }
+
+    function utf8ToBase64(str) {
+      const bytes = new TextEncoder().encode(str);
+      let binary = '';
+      const chunkSize = 0x8000;
+      for (let i = 0; i < bytes.length; i += chunkSize) {
+        binary += String.fromCharCode(...bytes.subarray(i, i + chunkSize));
+      }
+      return btoa(binary);
+    }
+
+    function base64ToUtf8(b64) {
+      const clean = (b64 || '').replace(/\s/g, '');
+      const binary = atob(clean);
+      const bytes = new Uint8Array(binary.length);
+      for (let i = 0; i < binary.length; i++) {
+        bytes[i] = binary.charCodeAt(i);
+      }
+      return new TextDecoder('utf-8').decode(bytes);
+    }
 
     function formatDateDDMMYYYY(date = new Date()) {
       const dd = String(date.getDate()).padStart(2, '0');
@@ -901,6 +962,119 @@
         DB.updated_at_ts = Date.now();
       }
       safeLocalSet(DB_STORAGE_KEY, JSON.stringify(DB));
+
+      // Если настроен токен GitHub — автоматически сохраняем db.json в репозиторий
+      if (!preserveTimestamp && isAdminAuthenticated()) {
+        const cfg = getGitHubSyncConfig();
+        if (cfg.token) {
+          scheduleGitHubAutoPush();
+        }
+      }
+    }
+
+    function scheduleGitHubAutoPush() {
+      if (ghAutoPushTimer) clearTimeout(ghAutoPushTimer);
+      ghAutoPushTimer = setTimeout(() => {
+        pushDatabaseToGitHub(true);
+      }, 600);
+    }
+
+    async function pushDatabaseToGitHub(silent = false) {
+      const cfg = getGitHubSyncConfig();
+      if (!cfg.token) {
+        if (!silent) openGitHubSyncModal();
+        return { ok: false, error: 'Не указан токен GitHub.' };
+      }
+
+      if (ghPushInFlight) {
+        ghPushPending = true;
+        return { ok: true, queued: true };
+      }
+
+      ghPushInFlight = true;
+      ghPushPending = false;
+      ghLastPushMessage = 'Сохранение в GitHub...';
+      updateGhSyncBadge();
+
+      try {
+        const apiUrl = `https://api.github.com/repos/${encodeURIComponent(cfg.owner)}/${encodeURIComponent(cfg.repo)}/contents/${encodeURIComponent(cfg.path)}`;
+        const headers = {
+          'Authorization': `Bearer ${cfg.token}`,
+          'Accept': 'application/vnd.github+json',
+          'Content-Type': 'application/json'
+        };
+
+        // Получаем текущий sha файла (если он уже существует в репозитории)
+        let existingSha = null;
+        const getResp = await fetch(`${apiUrl}?ref=${encodeURIComponent(cfg.branch)}&t=${Date.now()}`, {
+          headers: {
+            'Authorization': `Bearer ${cfg.token}`,
+            'Accept': 'application/vnd.github+json'
+          },
+          cache: 'no-store'
+        });
+        if (getResp.ok) {
+          const getJson = await getResp.json();
+          existingSha = getJson.sha || null;
+        }
+
+        const ts = DB.updated_at_ts || Date.now();
+        DB.updated_at_ts = ts;
+        const payload = {
+          app: 'ZAGAFOX',
+          version: 2,
+          updated_at_ts: ts,
+          exported_at: new Date(ts).toISOString(),
+          sections: DB.sections,
+          tests: DB.tests,
+          questions: DB.questions
+        };
+
+        const bodyObj = {
+          message: `Обновление базы тестов (${DB.sections.length} панелей, ${DB.questions.length} вопросов)`,
+          content: utf8ToBase64(JSON.stringify(payload, null, 2)),
+          branch: cfg.branch
+        };
+        if (existingSha) {
+          bodyObj.sha = existingSha;
+        }
+
+        const putResp = await fetch(apiUrl, {
+          method: 'PUT',
+          headers,
+          body: JSON.stringify(bodyObj)
+        });
+
+        if (!putResp.ok) {
+          const errData = await putResp.json().catch(() => ({}));
+          throw new Error(errData.message || `Ошибка GitHub (${putResp.status})`);
+        }
+
+        safeLocalSet(LAST_REMOTE_TS_KEY, String(ts));
+        remoteDbStatus = 'synced';
+        ghLastPushMessage = `Синхронизировано (${new Date().toLocaleTimeString('ru-RU', { hour: '2-digit', minute: '2-digit' })})`;
+        updateGhSyncBadge();
+        showToast('Изменения сохранены в GitHub — теперь доступны на всех телефонах!', 'success');
+        return { ok: true };
+      } catch (err) {
+        ghLastPushMessage = 'Ошибка синхронизации';
+        updateGhSyncBadge();
+        showToast(`Ошибка сохранения в GitHub: ${err.message}`, 'error');
+        return { ok: false, error: err.message };
+      } finally {
+        ghPushInFlight = false;
+        if (ghPushPending) {
+          ghPushPending = false;
+          scheduleGitHubAutoPush();
+        }
+      }
+    }
+
+    function updateGhSyncBadge() {
+      const el = document.getElementById('ghSyncStatusText');
+      if (el && ghLastPushMessage) {
+        el.textContent = ghLastPushMessage;
+      }
     }
 
     async function buildSeedDatabase() {
@@ -913,20 +1087,46 @@
       saveDatabase(true);
     }
 
+    async function fetchRemoteDbJsonObject() {
+      const cfg = getGitHubSyncConfig();
+      // 1. Сначала пробуем GitHub Contents API — отдаёт свежую версию мгновенно без задержки кэша Pages
+      try {
+        const apiUrl = `https://api.github.com/repos/${encodeURIComponent(cfg.owner)}/${encodeURIComponent(cfg.repo)}/contents/${encodeURIComponent(cfg.path)}?ref=${encodeURIComponent(cfg.branch)}&t=${Date.now()}`;
+        const headers = { 'Accept': 'application/vnd.github+json' };
+        if (cfg.token) headers['Authorization'] = `Bearer ${cfg.token}`;
+        const apiResp = await fetch(apiUrl, { headers, cache: 'no-store' });
+        if (apiResp.ok) {
+          const meta = await apiResp.json();
+          if (meta && meta.content) {
+            return JSON.parse(base64ToUtf8(meta.content));
+          }
+          if (meta && meta.download_url) {
+            const rawResp = await fetch(`${meta.download_url}?t=${Date.now()}`, { cache: 'no-store' });
+            if (rawResp.ok) return await rawResp.json();
+          }
+        }
+      } catch {}
+
+      // 2. Резервный вариант: локальный ./db.json на GitHub Pages
+      try {
+        const resp = await fetch(`./db.json?t=${Date.now()}`, { cache: 'no-store' });
+        if (resp.ok) {
+          return await resp.json();
+        }
+      } catch {}
+
+      return null;
+    }
+
     async function syncFromRemoteDbJson(forceOverwrite = false) {
       if (window.location.protocol !== 'https:' && window.location.protocol !== 'http:') {
         return { ok: false, reason: 'local' };
       }
       try {
-        const resp = await fetch(`./db.json?t=${Date.now()}`, { cache: 'no-store' });
-        if (!resp.ok) {
-          remoteDbStatus = 'missing';
-          return { ok: false, reason: 'not_found' };
-        }
-        const remoteData = await resp.json();
+        const remoteData = await fetchRemoteDbJsonObject();
         if (!remoteData || !Array.isArray(remoteData.sections) || !Array.isArray(remoteData.tests) || !Array.isArray(remoteData.questions)) {
           remoteDbStatus = 'missing';
-          return { ok: false, reason: 'invalid' };
+          return { ok: false, reason: 'not_found' };
         }
 
         const remoteTs = Number(remoteData.updated_at_ts) || 1;
@@ -2557,36 +2757,41 @@
               </div>
             </div>
 
-            <!-- Панель общей базы db.json и резервного копирования -->
+            <!-- Панель автосинхронизации GitHub (db.json) и резервного копирования -->
             <div class="pt-4 border-t border-purple-500/20 flex flex-wrap items-center justify-between gap-3">
               <div class="text-xs text-slate-300 flex flex-wrap items-center gap-2">
                 <span class="px-2 py-0.5 rounded-md font-mono text-[11px] font-bold ${
-                  remoteDbStatus === 'synced'
+                  getGitHubSyncConfig().token
                     ? 'bg-emerald-500/20 text-emerald-300 border border-emerald-400/35'
-                    : 'bg-amber-500/15 text-amber-200 border border-amber-400/30'
+                    : (remoteDbStatus === 'synced'
+                        ? 'bg-cyan-500/20 text-cyan-200 border border-cyan-400/35'
+                        : 'bg-amber-500/15 text-amber-200 border border-amber-400/30')
                 }">
-                  ${remoteDbStatus === 'synced' ? 'db.json подключён' : 'db.json не найден'}
+                  ${getGitHubSyncConfig().token ? 'Автосохранение GitHub: ВКЛ' : (remoteDbStatus === 'synced' ? 'db.json подключён (только чтение)' : 'Автосохранение не настроено')}
                 </span>
-                <span class="text-slate-400">Чтобы изменения появились на всех телефонах, нажмите «Экспорт db.json» и загрузите файл в GitHub рядом с index.html.</span>
+                <span id="ghSyncStatusText" class="text-slate-400">
+                  ${escapeHtml(ghLastPushMessage || (getGitHubSyncConfig().token
+                    ? 'Все изменения автоматически отправляются в GitHub для всех телефонов.'
+                    : 'Подключите токен GitHub один раз, чтобы тесты сами сохранялись для всех телефонов.'))}
+                </span>
               </div>
               <div class="flex flex-wrap items-center gap-2">
+                <button onclick="openGitHubSyncModal()" class="px-3.5 py-2 rounded-xl bg-fuchsia-500/20 hover:bg-fuchsia-500/35 border border-fuchsia-400/40 text-fuchsia-100 text-xs font-bold flex items-center gap-1.5 cursor-pointer">
+                  <span>⚙ Автосохранение GitHub</span>
+                </button>
+                ${getGitHubSyncConfig().token ? `
+                  <button onclick="pushDatabaseToGitHub(false)" class="px-3.5 py-2 rounded-xl bg-emerald-500/20 hover:bg-emerald-500/35 border border-emerald-400/40 text-emerald-200 text-xs font-bold flex items-center gap-1.5 cursor-pointer">
+                    <span>↑ Опубликовать сейчас</span>
+                  </button>
+                ` : ''}
                 <button onclick="exportDatabaseJson()" class="px-3.5 py-2 rounded-xl bg-purple-500/15 hover:bg-purple-500/25 border border-purple-400/35 text-purple-200 text-xs font-bold flex items-center gap-1.5 cursor-pointer">
-                  <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-                  </svg>
                   <span>Экспорт db.json</span>
                 </button>
                 <button onclick="triggerImportDatabase()" class="px-3.5 py-2 rounded-xl bg-cyan-500/15 hover:bg-cyan-500/25 border border-cyan-400/35 text-cyan-200 text-xs font-bold flex items-center gap-1.5 cursor-pointer">
-                  <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12" />
-                  </svg>
-                  <span>Импорт базы (.json)</span>
+                  <span>Импорт (.json)</span>
                 </button>
-                <button onclick="manualSyncFromRemoteDb()" class="px-3.5 py-2 rounded-xl bg-emerald-500/15 hover:bg-emerald-500/25 border border-emerald-400/35 text-emerald-200 text-xs font-bold flex items-center gap-1.5 cursor-pointer">
-                  <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
-                  </svg>
-                  <span>Загрузить из db.json</span>
+                <button onclick="manualSyncFromRemoteDb()" class="px-3.5 py-2 rounded-xl bg-white/5 hover:bg-white/10 border border-purple-400/25 text-slate-200 text-xs font-bold flex items-center gap-1.5 cursor-pointer">
+                  <span>↻ Обновить</span>
                 </button>
               </div>
             </div>
@@ -2706,6 +2911,69 @@
       setAdminAuthenticated(false);
       showToast('Вы вышли из Админ-панели.', 'info');
       navigateTo('/');
+    }
+
+    function openGitHubSyncModal() {
+      const cfg = getGitHubSyncConfig();
+      openModal(`
+        <div class="p-6 border-b border-purple-500/20 flex items-center justify-between">
+          <div>
+            <span class="text-xs font-mono font-bold text-fuchsia-300">СИНХРОНИЗАЦИЯ ДЛЯ ВСЕХ УСТРОЙСТВ</span>
+            <h2 class="text-lg font-extrabold text-white">Автосохранение в GitHub (db.json)</h2>
+          </div>
+          <button onclick="closeModal()" class="text-slate-400 hover:text-white p-1 cursor-pointer">✕</button>
+        </div>
+
+        <form id="ghSyncConfigForm" class="p-6 space-y-4">
+          <div class="p-3.5 rounded-2xl bg-purple-950/35 border border-purple-400/30 text-xs text-slate-300 leading-relaxed space-y-1">
+            <div class="font-bold text-purple-200">Как получить токен за 1 минуту:</div>
+            <div>1. Откройте на GitHub: <span class="font-mono text-fuchsia-300">Settings → Developer settings → Personal access tokens → Fine-grained tokens</span>.</div>
+            <div>2. Нажмите <strong class="text-white">Generate new token</strong>, выберите только репозиторий <span class="font-mono text-white">${escapeHtml(cfg.owner)}/${escapeHtml(cfg.repo)}</span>.</div>
+            <div>3. В разделе <strong class="text-white">Repository permissions → Contents</strong> выберите <strong class="text-emerald-300">Read and write</strong> и создайте токен.</div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            <div>
+              <label class="block text-xs font-bold text-purple-300 mb-1">Владелец (логин GitHub)</label>
+              <input type="text" id="ghOwnerInput" required value="${escapeHtml(cfg.owner)}" class="w-full px-3.5 py-2.5 rounded-xl bg-[#070510]/85 border border-purple-500/35 text-white font-mono text-xs outline-none" />
+            </div>
+            <div>
+              <label class="block text-xs font-bold text-purple-300 mb-1">Репозиторий</label>
+              <input type="text" id="ghRepoInput" required value="${escapeHtml(cfg.repo)}" class="w-full px-3.5 py-2.5 rounded-xl bg-[#070510]/85 border border-purple-500/35 text-white font-mono text-xs outline-none" />
+            </div>
+          </div>
+
+          <div>
+            <label class="block text-xs font-bold text-purple-300 mb-1">Токен доступа GitHub (хранится только в вашем браузере)</label>
+            <input type="password" id="ghTokenInput" value="${escapeHtml(cfg.token)}" placeholder="github_pat_... или ghp_..." class="w-full px-4 py-3 rounded-xl bg-[#070510]/85 border border-purple-500/35 text-amber-300 font-mono text-xs outline-none focus:border-fuchsia-400" />
+            <p class="text-[11px] text-slate-400 mt-1">Оставьте пустым, чтобы отключить автосохранение.</p>
+          </div>
+
+          <div class="pt-4 border-t border-purple-500/20 flex items-center justify-end gap-2">
+            <button type="button" onclick="closeModal()" class="px-4 py-2.5 rounded-xl bg-white/5 text-xs font-semibold text-slate-300 cursor-pointer">Отмена</button>
+            <button type="submit" class="px-6 py-2.5 rounded-xl btn-neon text-white text-xs font-bold cursor-pointer">Сохранить и опубликовать</button>
+          </div>
+        </form>
+      `);
+
+      document.getElementById('ghSyncConfigForm').addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const newCfg = {
+          owner: document.getElementById('ghOwnerInput').value.trim() || DEFAULT_GH_OWNER,
+          repo: document.getElementById('ghRepoInput').value.trim() || DEFAULT_GH_REPO,
+          branch: DEFAULT_GH_BRANCH,
+          path: DEFAULT_GH_PATH,
+          token: document.getElementById('ghTokenInput').value.trim()
+        };
+        saveGitHubSyncConfig(newCfg);
+        closeModal();
+        if (newCfg.token) {
+          await pushDatabaseToGitHub(false);
+        } else {
+          showToast('Автосохранение в GitHub отключено.', 'info');
+        }
+        renderApp();
+      });
     }
 
     function togglePanelPublishStatus(panelId) {
