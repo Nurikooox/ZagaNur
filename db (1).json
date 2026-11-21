@@ -1,8 +1,8 @@
 {
   "app": "ZAGAFOX",
   "version": 2,
-  "updated_at_ts": 1795288424169,
-  "exported_at": "2026-11-21T19:13:44.169Z",
+  "updated_at_ts": 1795288693176,
+  "exported_at": "2026-11-21T19:18:13.176Z",
   "sections": [
     {
       "id": "panel_x8rha7g_mwqrn88y",
@@ -14,6 +14,18 @@
       "password_enabled": true,
       "status": "Published",
       "created_at": "21.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "panel_1ca67ix_mwqsiioq",
+      "section_number": "002",
+      "panel_index": 2,
+      "title": "1",
+      "description": "2",
+      "password_hash": "4e07408562bedb8b60ce05c1decfe3ad16b72230967de01f640b7e4729b49fce",
+      "password_enabled": true,
+      "status": "Published",
+      "created_at": "22.11.2026",
       "updated_at": "22.11.2026"
     }
   ],
@@ -29,6 +41,18 @@
       "status": "Published",
       "created_at": "21.11.2026",
       "updated_at": "21.11.2026"
+    },
+    {
+      "id": "file_4fqm72j_mwqsiorl",
+      "section_id": "panel_1ca67ix_mwqsiioq",
+      "test_number": 1,
+      "title": "пропедевтика",
+      "file_name": "Микробиология және вирусология тест.docx",
+      "description": "Автоматически разделено на 6 блок(ов) по 50 вопросов (всего 300).",
+      "question_count": 300,
+      "status": "Published",
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
     }
   ],
   "questions": [
@@ -2911,6 +2935,4806 @@
       "correct_answer": 0,
       "created_at": "21.11.2026",
       "updated_at": "21.11.2026"
+    },
+    {
+      "id": "q_8ww4n4s_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 1,
+      "question_text": "Микробиология ғылымы нені зерттейді?",
+      "answer_options": [
+        "Микроорганизмдердің құрылысын",
+        "Өсімдіктердің өсуін",
+        "Жануарлардың мінез-құлқын",
+        "Тау жыныстарын",
+        "Адамның дене құрылысын"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_mhmkq6z_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 2,
+      "question_text": "Микробиология ғылымының негізін қалаушылардың бірі кім?",
+      "answer_options": [
+        "Луи Пастер",
+        "Чарльз Дарвин",
+        "Исаак Ньютон",
+        "Карл Линней",
+        "Грегор Мендель"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_7a7ojgo_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 3,
+      "question_text": "Микроорганизмдерге қандай ағзалар жатады?",
+      "answer_options": [
+        "Бактериялар, микроскопиялық саңырауқұлақтар, қарапайымдылар",
+        "Құстар мен сүтқоректілер, микроскопиялық саңырауқұлақтар, гүлді өсімдіктер",
+        "Гүлді өсімдіктер, құстар мен сүтқоректілер,",
+        "Бауырымен жорғалаушылар, ірі теңіз жануарлары",
+        "Ірі теңіз жануарлары"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_6lh2vz1_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 4,
+      "question_text": "Микроорганизмдерді зерттейтін негізгі құрал қандай?",
+      "answer_options": [
+        "Микроскоп",
+        "Телескоп",
+        "Термометр",
+        "Барометр",
+        "Гигрометр"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_7if6fvn_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 5,
+      "question_text": "Микроорганизмдердің негізгі тіршілік ету ортасы қандай?",
+      "answer_options": [
+        "Су, топырақ, ауа",
+        "Тек ғарыш кеңістігі",
+        "Тек мұздықтар",
+        "Тек құрғақ құм",
+        "Тек тау жыныстары"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_pwjq1yf_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 6,
+      "question_text": "Микроорганизмдердің табиғаттағы негізгі рөлі қандай?",
+      "answer_options": [
+        "Органикалық заттарды ыдырату",
+        "Күн сәулесін өндіру",
+        "Тау жыныстарын қалыптастыру",
+        "Атмосферадағы оттегіні толық жою",
+        "Жердің магнит өрісін өзгерту"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_5ohhca6_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 7,
+      "question_text": "Микробиологияның медицина саласындағы маңызы қандай?",
+      "answer_options": [
+        "Аурулардың қоздырғыштарын анықтау",
+        "Жер бедерін зерттеуді анықтау",
+        "Климатты болжау анықтау",
+        "Металдарды балқытуды анықтау",
+        "Ғарыш аппараттарын құрастыру"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_tod03rf_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 8,
+      "question_text": "Микроорганизмдердің мөлшері қандай өлшем бірлікпен өлшенеді?",
+      "answer_options": [
+        "Микрометр",
+        "Километр",
+        "Метр",
+        "Тонна",
+        "Литр"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_d2tz81z_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 9,
+      "question_text": "Бактериялар қай ағзалар тобына жатады?",
+      "answer_options": [
+        "Прокариоттар",
+        "Эукариоттар",
+        "Көпжасушалы жануарлар",
+        "Жоғары сатыдағы өсімдіктер",
+        "Омыртқалылар"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_aklkn44_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 10,
+      "question_text": "Микроорганизмдердің көбеюінің негізгі жолы қандай?",
+      "answer_options": [
+        "Екіге бөліну",
+        "Тұқым арқылы көбею",
+        "Бүршіктену арқылы ғана",
+        "Тозаңдану",
+        "Ұрықтану"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_j0rqh7g_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 11,
+      "question_text": "Бактериялардың шар тәрізді пішіні қалай аталады?",
+      "answer_options": [
+        "Кокктар",
+        "Бациллалар",
+        "Спириллалар",
+        "Вибриондар",
+        "Гифалар"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_s54lj46_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 12,
+      "question_text": "Таяқша тәрізді бактериялар қалай аталады?",
+      "answer_options": [
+        "Бациллалар",
+        "Кокктар",
+        "Спириллалар",
+        "Вибриондар",
+        "Диплококктар"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_60cj5du_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 13,
+      "question_text": "Үтір тәрізді иілген бактериялар қалай аталады?",
+      "answer_options": [
+        "Вибриондар",
+        "Кокктар",
+        "Бациллалар",
+        "Стафилококктар",
+        "Стрептококктар"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_bqeishg_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 14,
+      "question_text": "Спираль тәрізді бактериялар қалай аталады?",
+      "answer_options": [
+        "Спириллалар",
+        "Кокктар",
+        "Бациллалар",
+        "Диплококктар",
+        "Тетракокктар"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_qws0gqs_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 15,
+      "question_text": "Екі-екіден орналасқан кокктар қалай аталады?",
+      "answer_options": [
+        "Диплококктар",
+        "Стафилококктар",
+        "Стрептококктар",
+        "Сарциналар",
+        "Тетракокктар"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_5n1t5lk_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 16,
+      "question_text": "Тізбек тәрізді орналасқан кокктар қалай аталады?",
+      "answer_options": [
+        "Стрептококктар",
+        "Стафилококктар",
+        "Диплококктар",
+        "Сарциналар",
+        "Тетракокктар"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_a5orza9_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 17,
+      "question_text": "Жүзім шоғыры тәрізді орналасқан кокктар қалай аталады?",
+      "answer_options": [
+        "Стафилококктар",
+        "Стрептококктар",
+        "Диплококктар",
+        "Бациллалар",
+        "Спириллалар"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_vq80xj3_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 18,
+      "question_text": "Төрт-төрттен орналасқан кокктар қалай аталады?",
+      "answer_options": [
+        "Тетракокктар",
+        "Диплококктар",
+        "Стафилококктар",
+        "Стрептококктар",
+        "Вибриондар"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_vm1s4tk_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 19,
+      "question_text": "Бактерия жасушасының негізгі пішінін анықтайтын құрылым қандай?",
+      "answer_options": [
+        "Жасуша қабырғасы",
+        "Ядрошық",
+        "Хлоропласт",
+        "Митохондрия",
+        "Гольджи аппараты"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_ohjn1vb_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 20,
+      "question_text": "Бактериялардың қозғалуына қатысатын құрылым қандай?",
+      "answer_options": [
+        "Талшықтар",
+        "Рибосомалар",
+        "Капсула",
+        "Плазмалық мембрана",
+        "Нуклеоид"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_vd9mka1_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 21,
+      "question_text": "Бактериялардың сыртқы қорғаныш қабаты қалай аталады?",
+      "answer_options": [
+        "Капсула",
+        "Ядро",
+        "Митохондрия",
+        "Хлоропласт",
+        "Лизосома"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_kxh6k0z_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 22,
+      "question_text": "Бактериялардың тұқым қуалайтын ақпараты орналасатын аймақ қалай аталады?",
+      "answer_options": [
+        "Нуклеоид",
+        "Ядрошық",
+        "Вакуоль",
+        "Митохондрия",
+        "Эндоплазмалық тор"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_m5mv253_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 23,
+      "question_text": "Бактерия жасушасында ақуыз синтезі қай жерде жүреді?",
+      "answer_options": [
+        "Рибосомаларда",
+        "Капсулада",
+        "Жасуша қабырғасында",
+        "Талшықта",
+        "Спорада"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_euaopg7_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 24,
+      "question_text": "Кейбір бактериялар қолайсыз жағдайда қандай құрылым түзеді?",
+      "answer_options": [
+        "Эндоспора",
+        "Хлоропласт",
+        "Ядрошық",
+        "Вакуоль",
+        "Митохондрия"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_fr9er7b_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 25,
+      "question_text": "Бактериялардың жасуша қабырғасының негізгі құрамдас бөлігі қандай?",
+      "answer_options": [
+        "Пептидогликан",
+        "Крахмал",
+        "Целлюлоза",
+        "Гликоген",
+        "Хитин"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_lkpj8u5_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 26,
+      "question_text": "Бактериялардың өсуіне қажетті негізгі факторлардың бірі қандай?",
+      "answer_options": [
+        "Қоректік заттар",
+        "Тек жарық",
+        "Тек дыбыс",
+        "Магнит өрісі",
+        "Радиация"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_ajx8pba_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 27,
+      "question_text": "Бактериялардың өсуі үшін қолайлы температура қалай аталады?",
+      "answer_options": [
+        "Оптимал температура",
+        "Минималды қысым",
+        "Максималды жарық",
+        "Атмосфералық қысым",
+        "Осмостық қысым"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_79opn4i_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 28,
+      "question_text": "Оттегіні қажет ететін микроорганизмдер қалай аталады?",
+      "answer_options": [
+        "Облигатты аэробтар",
+        "Облигатты анаэробтар",
+        "Факультативті анаэробтар",
+        "Микроаэрофилдер",
+        "Ацидофилдер"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_pmyiuzf_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 29,
+      "question_text": "Оттегісіз ортада тіршілік ететін микроорганизмдер қалай аталады?",
+      "answer_options": [
+        "Облигатты анаэробтар",
+        "Облигатты аэробтар",
+        "Фототрофтар",
+        "Галофилдер",
+        "Термофилдер"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_d71br0e_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 30,
+      "question_text": "Оттегі бар және жоқ ортада да тіршілік ете алатын бактериялар қалай аталады?",
+      "answer_options": [
+        "Факультативті анаэробтар",
+        "Облигатты аэробтар",
+        "Облигатты анаэробтар",
+        "Термофилдер",
+        "Психрофилдер"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_eu62tjo_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 31,
+      "question_text": "Микроорганизмдерді өсіруге арналған арнайы орта қалай аталады?",
+      "answer_options": [
+        "Қоректік орта",
+        "Дистилденген су",
+        "Минералды май",
+        "Органикалық еріткіш",
+        "Тұзды ерітінді"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_x76872c_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 32,
+      "question_text": "Қатты қоректік ортаны дайындауда жиі қолданылатын зат қандай?",
+      "answer_options": [
+        "Агар-агар",
+        "Глюкоза",
+        "Этил спирті",
+        "Натрий хлориді",
+        "Күкірт қышқылы"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_jrg7x3m_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 33,
+      "question_text": "Микроорганизмдерді өсіруге арналған ыдыс қалай аталады?",
+      "answer_options": [
+        "Петри табақшасы",
+        "Өлшеуіш цилиндр",
+        "Бюретка",
+        "Колба-құйғыш",
+        "Пипетка"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_twxzghi_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 34,
+      "question_text": "Бактериялардың қоректік ортада түзген шоғырлары қалай аталады?",
+      "answer_options": [
+        "Колониялар",
+        "Ұлпалар",
+        "Мүшелер",
+        "Споралар",
+        "Хромосомалар"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_e4lw1gp_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 35,
+      "question_text": "Микроорганизмдердің өсу қарқынына әсер ететін фактор қандай?",
+      "answer_options": [
+        "Температура",
+        "Дыбыс жиілігі",
+        "Жарықтың түсі ғана",
+        "Жел бағыты",
+        "Атмосфераның түсі"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_zleb4pm_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 36,
+      "question_text": "Микроорганизмдердің көбеюі нәтижесінде олардың санының артуы қалай аталады?",
+      "answer_options": [
+        "Популяцияның өсуі",
+        "Фотосинтез",
+        "Транспирация",
+        "Тозаңдану",
+        "Минералдану"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_l4xpmjs_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 37,
+      "question_text": "Бактериялардың өсу қисығы неше негізгі кезеңнен тұрады?",
+      "answer_options": [
+        "Төрт",
+        "Екі",
+        "Үш",
+        "Бес",
+        "Алты"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_zdazdlh_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 38,
+      "question_text": "Бактериялардың жаңа ортаға бейімделу кезеңі қалай аталады?",
+      "answer_options": [
+        "Лаг-фаза",
+        "Логарифмдік фаза",
+        "Стационарлық фаза",
+        "Өлу фазасы",
+        "Спора түзу фазасы"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_oga35bg_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 39,
+      "question_text": "Бактериялар санының қарқынды арту кезеңі қалай аталады?",
+      "answer_options": [
+        "Логарифмдік фаза",
+        "Лаг-фаза",
+        "Стационарлық фаза",
+        "Өлу фазасы",
+        "Тыныштық фазасы"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_yde4azd_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 40,
+      "question_text": "Бактериялар санының өсуі мен өлуі шамамен тең болатын кезең қалай аталады?",
+      "answer_options": [
+        "Стационарлық фаза",
+        "Лаг-фаза",
+        "Логарифмдік фаза",
+        "Өлу фазасы",
+        "Бейімделу фазасы"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_epdt79b_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 41,
+      "question_text": "Микроорганизмдерді микроскоп арқылы зерттеу әдісі қалай аталады?",
+      "answer_options": [
+        "Микроскопиялық әдіс",
+        "Хроматографиялық әдіс",
+        "Спектрофотометриялық әдіс",
+        "Титрлеу әдісі",
+        "Дистилдеу әдісі"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_c7e0192_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 42,
+      "question_text": "Бактерияларды бояуда кеңінен қолданылатын әдіс қандай?",
+      "answer_options": [
+        "Грам әдісі",
+        "Сокслет әдісі",
+        "Кьельдаль әдісі",
+        "Фольгард әдісі",
+        "Бертло әдісі"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_w7kad1o_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 43,
+      "question_text": "Грам әдісін ұсынған ғалым кім?",
+      "answer_options": [
+        "Ханс Грам",
+        "Луи Пастер",
+        "Роберт Кох",
+        "Александр Флеминг",
+        "Илья Мечников"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_fqo7j7e_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 44,
+      "question_text": "Грам оң бактериялар қандай түске боялады?",
+      "answer_options": [
+        "Күлгін түске",
+        "Қызғылт түске",
+        "Сары түске",
+        "Жасыл түске",
+        "Қоңыр түске"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_kdxuat6_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 45,
+      "question_text": "Грам теріс бактериялар қандай түске боялады?",
+      "answer_options": [
+        "Қызғылт түске",
+        "Күлгін түске",
+        "Қара түске",
+        "Көк түске",
+        "Сары түске"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_6y9si84_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 46,
+      "question_text": "Микроорганизмдердің таза дақылын бөліп алу үшін не қолданылады?",
+      "answer_options": [
+        "Ортаға себу әдісі",
+        "Тек центрифугалау",
+        "Тек сүзу",
+        "Қайнату",
+        "Кептіру"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_0u7abib_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 47,
+      "question_text": "Микроорганизмдерді стерильдеу дегеніміз не?",
+      "answer_options": [
+        "Олардың спораларын жою",
+        "Тек бактериялардың санын азайту",
+        "Тек вирустарды жою",
+        "Микроорганизмдерді бояу",
+        "Микроорганизмдерді қоректендіру"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_fidybox_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 48,
+      "question_text": "Автоклавта стерильдеу қандай факторға негізделген?",
+      "answer_options": [
+        "Қысым әсеріне",
+        "Тек ультракүлгін сәулеге",
+        "Тек салқын ауаға",
+        "Магнит өрісіне",
+        "Дыбыс толқындарына"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_jr457st_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 49,
+      "question_text": "Микроорганизмдерді кептіру арқылы жою әдісі қалай аталады?",
+      "answer_options": [
+        "Кептіру әдісі",
+        "Бояу әдісі",
+        "Титрлеу әдісі",
+        "Микроскопия",
+        "Гидролиз"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_o4nqc2h_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 50,
+      "question_text": "Микроорганизмдердің санын анықтауда қандай әдіс қолданылады?",
+      "answer_options": [
+        "Оларды санау әдісі",
+        "Дистилдеу әдісі",
+        "Тұндыру әдісі",
+        "Титрлеу әдісі",
+        "Экстракция әдісі"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_o1h9pk3_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 51,
+      "question_text": "Микроорганизмдердің қоректенуі дегеніміз не?",
+      "answer_options": [
+        "Заттарды қабылдау",
+        "Жасушаның бөлінуі",
+        "Жасушаның өлуі",
+        "Спораның түзілуі",
+        "Жасушаның боялуы"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_0lyui9l_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 52,
+      "question_text": "Микроорганизмдердің негізгі энергия көзі қандай?",
+      "answer_options": [
+        "Екі қосылыстардың химиялық энергиясы",
+        "Бейорганикалық қосылыстардың химиялық энергиясы",
+        "Органикалық қосылыстардың химиялық энергиясы",
+        "Магниттік энергия",
+        "Жел энергиясы"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_9yt67bi_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 53,
+      "question_text": "Органикалық заттармен қоректенетін микроорганизмдер қалай аталады?",
+      "answer_options": [
+        "Гетеротрофтар",
+        "Автотрофтар",
+        "Фототрофтар",
+        "Литотрофтар",
+        "Хемолитотрофтар"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_u0dlk21_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 54,
+      "question_text": "Көмірқышқыл газын көміртек көзі ретінде пайдаланатын ағзалар қалай аталады?",
+      "answer_options": [
+        "Автотрофтар",
+        "Гетеротрофтар",
+        "Сапрофиттер",
+        "Паразиттер",
+        "Симбионттар"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_4qm80nw_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 55,
+      "question_text": "Фотосинтез арқылы энергия алатын микроорганизмдер қалай аталады?",
+      "answer_options": [
+        "Фототрофтар",
+        "Хемотрофтар",
+        "Гетеротрофтар",
+        "Сапрофиттер",
+        "Паразиттер"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_vd7nyj6_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 56,
+      "question_text": "Химиялық реакциялардан энергия алатын микроорганизмдер қалай аталады?",
+      "answer_options": [
+        "Хемотрофтар",
+        "Фототрофтар",
+        "Автотрофтар",
+        "Симбионттар",
+        "Паразиттер"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_cn2sqan_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 57,
+      "question_text": "Микроорганизмдердің тіршілігі үшін азот қандай мақсатта қажет?",
+      "answer_options": [
+        "Ақуызды синтездеу үшін",
+        "Тек суды ыдырату үшін",
+        "Тек жасушаны бояу үшін",
+        "Тек қозғалу үшін",
+        "Тек жылу өндіру үшін"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_ee88zo3_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 58,
+      "question_text": "Микроорганизмдердің көміртек көзі ретінде жиі пайдаланатын заты қандай?",
+      "answer_options": [
+        "Глюкоза",
+        "Натрий",
+        "Күкірт",
+        "Этил спирті",
+        "Кальций"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_7hso0cq_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 59,
+      "question_text": "Ферменттер дегеніміз не?",
+      "answer_options": [
+        "Биологиялық катализаторлар",
+        "Минералды тұздар",
+        "Бейорганикалық қышқылдар",
+        "Жасуша қабырғасының бөліктері",
+        "Бактериялық споралар"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_c4pk7vv_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 60,
+      "question_text": "Ферменттердің негізгі қызметі қандай?",
+      "answer_options": [
+        "Биохимиялық реакцияларды жылдамдату",
+        "Жасушаны механикалық қорғау",
+        "Генетикалық ақпаратты сақтауды жылдамдату",
+        "Жасушаны бояуды жылдамдату",
+        "Суды жинақтау"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_cggb416_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 61,
+      "question_text": "Микроорганизмдердің тыныс алуы дегеніміз не?",
+      "answer_options": [
+        "Тотығу-тотықсыздану реакциясы",
+        "Жасушаның механикалық бөлінуі",
+        "Қоректік ортаның боялуы",
+        "Жасушаның кебуі",
+        "Спораның ыдырауы"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_cqysvxo_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 62,
+      "question_text": "Аэробты тыныс алудың соңғы электрон қабылдаушысы қандай?",
+      "answer_options": [
+        "Оттегі",
+        "Азот",
+        "Көмірқышқыл газы",
+        "Сутегі",
+        "Метан"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_zhhk56m_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 63,
+      "question_text": "Анаэробты тыныс алу кезінде не қолданылады?",
+      "answer_options": [
+        "Оттегі",
+        "Тек молекулалық оттегі",
+        "Тек жарық энергиясы",
+        "Тек су",
+        "Глюкоза"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_mls3kzw_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 64,
+      "question_text": "Ашудың негізгі ерекшелігі қандай?",
+      "answer_options": [
+        "Оттек арқылы энергия түзілуі",
+        "Тек оттегімен жүретін процесс",
+        "Ақуыздардың синтезделмеуі",
+        "Жасушаның бөлінбеуі",
+        "Споралардың түзілуі"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_mouiudf_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 65,
+      "question_text": "Сүт қышқылды ашу нәтижесінде қандай өнім түзіледі?",
+      "answer_options": [
+        "Сүтқышқылы",
+        "Этил ацетаты",
+        "Метан",
+        "Оттегі",
+        "Аммиак"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_84kiaj1_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 66,
+      "question_text": "Топырақ микрофлорасы дегеніміз не?",
+      "answer_options": [
+        "Топырақтағы микроорганизмдер",
+        "Топырақтағы минералдар жиынтығы",
+        "Топырақтағы жануарлар жиынтығы",
+        "Өсімдік тамырлары ғана",
+        "Топырақтағы су мөлшері"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_hfxgex5_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 67,
+      "question_text": "Су микрофлорасы дегеніміз не?",
+      "answer_options": [
+        "Судағы микроорганизмдер",
+        "Судағы минералды тұздар",
+        "Су өсімдіктері ғана",
+        "Су жануарлары ғана",
+        "Судың температурасы"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_30d5az4_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 68,
+      "question_text": "Ауадағы микроорганизмдер қалай таралады?",
+      "answer_options": [
+        "Шаң-тозаң арқылы",
+        "Тек топырақ арқылы",
+        "Тек су арқылы",
+        "Тек жарық арқылы",
+        "Тек температура арқылы"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_d9utw71_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 69,
+      "question_text": "Табиғаттағы азот айналымына қандай микроорганизмдер қатысады?",
+      "answer_options": [
+        "Азотты бактериялар",
+        "Тек ашытқылар",
+        "Тек вирустар",
+        "Тек зең саңырауқұлақтары",
+        "Тек қарапайымдылар"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_qsukmtb_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 70,
+      "question_text": "Азот фиксациясы дегеніміз не?",
+      "answer_options": [
+        "Азотты қосылыстарға айналдыру",
+        "Азотты оттегіге айналдыру",
+        "Азотты судан бөліп алу",
+        "Азотты көміртекке айналдыру",
+        "Азотты толық жою"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_d6c7ola_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 71,
+      "question_text": "Түйнек бактериялары қай өсімдіктермен симбиоз түзеді?",
+      "answer_options": [
+        "Бұршақ тұқымдастар",
+        "Қылқанжапырақтылармен",
+        "Қырықжапырақтармен",
+        "Балдырлармен",
+        "Мүктермен"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_6nifh0q_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 72,
+      "question_text": "Органикалық қалдықтарды ыдырататын микроорганизмдер қалай аталады?",
+      "answer_options": [
+        "Сапрофиттер",
+        "Паразиттер",
+        "Вирустар",
+        "Автотрофтар",
+        "Фототрофтар"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_fg5y30q_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 73,
+      "question_text": "Микроорганизмдердің табиғаттағы зат айналымындағы рөлі қандай?",
+      "answer_options": [
+        "Органикалық минералдандыру",
+        "Тек оттегіні сіңіру",
+        "Тек суды буландыру",
+        "Тек топырақты қыздыру",
+        "Тек өсімдіктерді жою"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_0z5l9uc_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 74,
+      "question_text": "Биологиялық тазарту дегеніміз не?",
+      "answer_options": [
+        "Заттарды ыдырату",
+        "Суды тек қайнату",
+        "Топырақты кептіру",
+        "Ауаны салқындату",
+        "Металдарды балқыту"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_6p62tn5_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 75,
+      "question_text": "Биоремедиация дегеніміз не?",
+      "answer_options": [
+        "Микроорганизмдер арқылы ластанған ортаны қалпына келтіру",
+        "Топырақты тек механикалық қопсыту арқылы қалпына келтіру",
+        "Суды мұздату арқылы қалпына келтіру",
+        "Ауаны қысу арқылы қалпына келтіру",
+        "Минералдарды балқыту арқылы қалпына келтіру"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_h9ax03b_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 76,
+      "question_text": "Мұнаймен ластанған топырақты тазартуда қандай ағзалар қолданылады?",
+      "answer_options": [
+        "Микроорганизмдер",
+        "Тек вирустар",
+        "Тек өсімдік тұқымдары",
+        "Тек жануарлар",
+        "Тек балдырлардың қабықшалары"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_skf1kq5_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 77,
+      "question_text": "Компосттау процесіне қандай ағзалар қатысады?",
+      "answer_options": [
+        "Бактериялар",
+        "Тек вирустар",
+        "Тек жануарлар",
+        "Тек өсімдік тұқымдары",
+        "Тек балықтар"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_fxj6rgl_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 78,
+      "question_text": "Микроорганизмдердің қоршаған ортаға бейімделуі қалай аталады?",
+      "answer_options": [
+        "Адаптация",
+        "Фотосинтез",
+        "Транспирация",
+        "Мутацияның толық тоқтауы",
+        "Дистилдеу"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_3wioi0z_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 79,
+      "question_text": "Тұз концентрациясы жоғары ортада тіршілік ететін микроорганизмдер қалай аталады?",
+      "answer_options": [
+        "Галофилдер",
+        "Термофилдер",
+        "Психрофилдер",
+        "Ацидофилдер",
+        "Алкалифилдер"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_lkmncy8_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 80,
+      "question_text": "Жоғары температурада тіршілік ететін микроорганизмдер қалай аталады?",
+      "answer_options": [
+        "Термофилдер",
+        "Психрофилдер",
+        "Галофилдер",
+        "Мезофилдер",
+        "Криофилдер"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_01j9m3c_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 81,
+      "question_text": "Патогенді микроорганизмдер дегеніміз не?",
+      "answer_options": [
+        "Ауру тудыратын ағзалар",
+        "Тек пайдалы бактериялар",
+        "Тек тағамдық ашытқылар",
+        "Тек топырақ бактериялары",
+        "Тек су балдырлары"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_ph7jypy_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 82,
+      "question_text": "Шартты-патогенді микроорганизмдер дегеніміз не?",
+      "answer_options": [
+        "Ауру тудыруы мүмкін ағзалар",
+        "Ешқашан ауру тудырмайтын ағзалар",
+        "Тек өсімдіктерде тіршілік ететін ағзалар",
+        "Тек суда тіршілік ететін вирустар",
+        "Тек пайдалы ашытқылар"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_jxq80no_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 83,
+      "question_text": "Инфекция дегеніміз не?",
+      "answer_options": [
+        "Қоздырғыш көбейіп, әсер ету",
+        "Ағзаның қалыпты өсуіне әсері",
+        "Жасушаның тыныс алуы",
+        "Қанның ұюына әсері",
+        "Ас қорыту процесі"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_o6yfp8r_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 84,
+      "question_text": "Жұқпалы аурулардың негізгі қоздырғыштарына не жатады?",
+      "answer_options": [
+        "Бактериялар, вирустар, саңырауқұлақтар",
+        "Тек минералдар, саңырауқұлақтар және қарапайымдылар",
+        "Тек дәрумендер, саңырауқұлақтар және қарапайымдылар",
+        "Тек гормондар, вирустар, саңырауқұлақтар",
+        "Тек ферменттер"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_naawld8_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 85,
+      "question_text": "Ауру қоздырғышының ағзаға ену жолы қалай аталады?",
+      "answer_options": [
+        "Инфекция қақпасы",
+        "Қоректік орта қақпасы",
+        "Биореактор қақпасы",
+        "Колония қақпасы",
+        "Нуклеоид қақпасы"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_z8s2lal_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 86,
+      "question_text": "Иммунитет дегеніміз не?",
+      "answer_options": [
+        "Ағзаның бөгде заттарға қарсы қорғану қабілеті",
+        "Ағзаның қоректену процесіне қарсы қорғану қабілеті",
+        "Жасушаның бөлінуі",
+        "Қан айналымы",
+        "Ас қорыту"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_6zgrfdo_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 87,
+      "question_text": "Туа біткен иммунитеттің ерекшелігі қандай?",
+      "answer_options": [
+        "Ағзада туғаннан болатын қорғаныс",
+        "Тек вакцинадан кейін қалыптасады",
+        "Тек дәрі қабылдағанда пайда болады",
+        "Тек ересек жаста қалыптасады",
+        "Тек вирустарға қарсы бағытталады"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_6ooc9mo_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 88,
+      "question_text": "Жүре пайда болған иммунитет қалай қалыптасады?",
+      "answer_options": [
+        "Антигеннен кейін болатын",
+        "Тек тұқым қуалау арқылы",
+        "Тек тыныс алу арқылы",
+        "Тек тамақтану арқылы",
+        "Тек дене жаттығулары арқылы"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_lkjjg55_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 89,
+      "question_text": "Антиденелер дегеніміз не?",
+      "answer_options": [
+        "Иммуноглобулиндер",
+        "Жасуша қабырғасының көмірсулары",
+        "Бактериялық споралар",
+        "Нуклеин қышқылдары",
+        "Минералды тұздар"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_rduueut_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 90,
+      "question_text": "Антиген дегеніміз не?",
+      "answer_options": [
+        "Иммундық жауап туындата алатын бөгде зат",
+        "Тек дәрумен",
+        "Тек гормон",
+        "Жасушаның энергия көзі",
+        "Тек фермент"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_v7wp06i_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 91,
+      "question_text": "Вакцинацияның мақсаты қандай?",
+      "answer_options": [
+        "Арнайы иммунитет қалыптастыру",
+        "Ағзаның температурасын көтеру",
+        "Бактерияларды қоректендіру",
+        "Қан қысымын арттыру",
+        "Ас қорыту процесін баяулату"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_bzsx9vg_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 92,
+      "question_text": "Антисептика дегеніміз не?",
+      "answer_options": [
+        "Өсіді тежеу әдістері",
+        "Қоректік ортаны дайындау",
+        "Микроорганизмдерді көбейту",
+        "Жасушаларды бояу",
+        "Бактерияларды сұрыптау"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_qf5h32v_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 93,
+      "question_text": "Дезинфекция дегеніміз не?",
+      "answer_options": [
+        "Патогенді микроорганизмдерді жою",
+        "Микроорганизмдерді көбейту немесе жою",
+        "Жасушаларды өсіру",
+        "Қоректік орта жасау",
+        "Бактерияларды бояу"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_xcdzilh_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 94,
+      "question_text": "Антибиотиктер дегеніміз не?",
+      "answer_options": [
+        "Бактериялардың өсуін тежейтін немесе оларды жояды",
+        "Вирустардың көбеюін әрдайым толық тоқтататын заттар",
+        "Тек дәрумендер",
+        "Минералды тыңайтқыштар",
+        "Ас қорыту ферменттері"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_0p5srhd_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 95,
+      "question_text": "Антибиотикке төзімділік дегеніміз не?",
+      "answer_options": [
+        "Антибиотик әсеріне қарамайтірі қалу қабілеті",
+        "Бактериялардың қоректік заттарды қабылдауы",
+        "Бактериялардың түсінің өзгеруі",
+        "Вирустардың жойылуы",
+        "Жасушалардың боялуы"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_pn6qh5o_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 96,
+      "question_text": "Вирусология ғылымы нені зерттейді?",
+      "answer_options": [
+        "Вирустарды",
+        "Тек бактерияларды",
+        "Тек саңырауқұлақтарды",
+        "Өсімдіктерді",
+        "Тек жануарлардың мүшелерін"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_wdg5le4_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 97,
+      "question_text": "Вирустардың негізгі ерекшелігі қандай?",
+      "answer_options": [
+        "Жасуша ішінде көбейеді",
+        "Өздігінен қоректенеді",
+        "Жасушалық ядросы болады",
+        "Өздігінен тыныс алады",
+        "Екіге бөліну арқылы көбейеді"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_91n5hfk_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 98,
+      "question_text": "Вирустың генетикалық материалы қандай болуы мүмкін?",
+      "answer_options": [
+        "ДНҚ немесе РНҚ",
+        "Тек ақуыз немесе РНҚ",
+        "Тек липид немесе РНҚ",
+        "Тек көмірсу немесе РНҚ",
+        "Тек минерал немесе РНҚ"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_q98t3ea_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 99,
+      "question_text": "Вирустың ақуызды қабықшасы қалай аталады?",
+      "answer_options": [
+        "Капсид",
+        "Капсула",
+        "Нуклеоид",
+        "Рибосома",
+        "Митохондрия"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_2u6hrg1_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 100,
+      "question_text": "Вирустың генетикалық материалы мен ақуыз қабықшасы бірігіп қалай аталады?",
+      "answer_options": [
+        "Нуклеокапсид",
+        "Нуклеоид",
+        "Цитоплазма",
+        "Капсула",
+        "Рибосома"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_d3ix2mr_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 101,
+      "question_text": "Вирустардың көбеюі қандай үдеріс арқылы жүреді?",
+      "answer_options": [
+        "Иесін пайдалану арқылы",
+        "Екіге бөліну арқылы",
+        "Бүршіктену арқылы бактерия сияқты",
+        "Тұқым арқылы",
+        "Спора түзу арқылы"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_8dixye7_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 102,
+      "question_text": "Бактериофагтар дегеніміз не?",
+      "answer_options": [
+        "Бактерияларды зақымдайтын вирустар",
+        "Өсімдіктерді зақымдайтын бактериялар",
+        "Саңырауқұлақтар",
+        "Қарапайымдылар",
+        "Балдырлар"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_7uy8kxh_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 103,
+      "question_text": "Вирустардың жасушаға жабысу кезеңі қалай аталады?",
+      "answer_options": [
+        "Адсорбция",
+        "Репликация",
+        "Транскрипция",
+        "Трансляция",
+        "Мутация"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_0pdkgrm_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 104,
+      "question_text": "Вирустың генетикалық материалының көшірмеленуі қалай аталады?",
+      "answer_options": [
+        "Репликация",
+        "Адсорбция",
+        "Дезинфекция",
+        "Ферментация",
+        "Стерилизация"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_uctsg8p_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 105,
+      "question_text": "Вирус бөлшектерінің жасушадан шығуы қалай аталады?",
+      "answer_options": [
+        "Босап шығу",
+        "Адсорбция",
+        "Боялу",
+        "Қоректену",
+        "Споралану"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_7ortsxx_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 106,
+      "question_text": "Вирустарды зерттеуде қандай құрал қолданылады?",
+      "answer_options": [
+        "Электрондық микроскоп",
+        "Қарапайым таразы",
+        "Термометр",
+        "Барометр",
+        "Спектрограф қана"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_koe28h2_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 107,
+      "question_text": "Вирустардың жасушадан тыс күйдегі толық бөлшегі қалай аталады?",
+      "answer_options": [
+        "Вирион",
+        "Бактерия",
+        "Спора",
+        "Колония",
+        "Гифа"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_1jnpvw4_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 108,
+      "question_text": "Қабықшасы бар вирустардың сыртқы қабаты қалай аталады?",
+      "answer_options": [
+        "Суперкапсид",
+        "Нуклеоид",
+        "Рибосома",
+        "Цитоплазма",
+        "Жасуша қабырғасы"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_n5wvunv_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 109,
+      "question_text": "Вирустарға қарсы қолданылатын препараттар қалай аталады?",
+      "answer_options": [
+        "Вирусқа қарсы препараттар",
+        "Антибиотиктер",
+        "Антисептикалық бояғыштар",
+        "Минералды тыңайтқыштар",
+        "Ферменттер"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_9vgy89f_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 110,
+      "question_text": "Вирустардың тұқым қуалайтын өзгерістері қалай аталады?",
+      "answer_options": [
+        "Мутациялар",
+        "Колониялар",
+        "Споралар",
+        "Гифалар",
+        "Капсулалар"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_5a7ulmg_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 111,
+      "question_text": "Микробиологиялық зертханада жұмыс бастар алдында не істеу қажет?",
+      "answer_options": [
+        "Қолды жуып, арнайы халат пен жеке қорғаныс құралдарын кию",
+        "Қоректік ортаны ашық қалдыра отырып, қорғаныс құралдарын кию",
+        "Қолғапсыз жұмыс істеу",
+        "Тамақ ішпеу, қолғапсыз жұмыс істемеу",
+        "Зертханалық құралдарды рұқсатсыз пайдалану"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_y4vw4jr_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 112,
+      "question_text": "Микробиологиялық ілмек не үшін қолданылады?",
+      "answer_options": [
+        "Қоректік ортаға себу үшін",
+        "Ерітіндінің температурасын өлшеу үшін",
+        "Сұйықтық көлемін өлшеу үшін",
+        "Қысымды анықтау үшін",
+        "Массаны өлшеу үшін"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_1crlm8q_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 113,
+      "question_text": "Микроорганизмдерді қоректік ортаға енгізу процесі қалай аталады?",
+      "answer_options": [
+        "Егу, себу",
+        "Дистилдеу",
+        "Титрлеу",
+        "Экстракция",
+        "Кристалдану"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_0jdcfqr_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 114,
+      "question_text": "Микроорганизмдердің таза дақылын алу үшін қандай әдіс қолданылады?",
+      "answer_options": [
+        "Штрихтап себу",
+        "Тек қыздыру",
+        "Тек мұздату",
+        "Тек тұндыру",
+        "Тек сүзу"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_9x4axc1_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 115,
+      "question_text": "Петри табақшасындағы колонияларды санау не үшін қажет?",
+      "answer_options": [
+        "Мо санын анықтау үшін",
+        "Жасушаның түсін өзгерту үшін",
+        "Вирустарды өсіру үшін",
+        "Ақуыздың анықтау үшін",
+        "Судың қаттылығын өлшеу үшін"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_5lcaus1_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 116,
+      "question_text": "Микроорганизмдердің тірі жасушаларын санауда қандай көрсеткіш қолданылады?",
+      "answer_options": [
+        "КТБ/мл",
+        "Килограмм",
+        "Метр",
+        "Паскаль",
+        "Джоуль"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_b4nxmsk_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 117,
+      "question_text": "Сұйық қоректік ортаның лайлануы нені білдіруі мүмкін?",
+      "answer_options": [
+        "Микроорганизмдердің өсуін",
+        "Ортада тек минералдардың болуын",
+        "Судың булануын",
+        "Температураның төмендеуін",
+        "Қысымның жоғалуын"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_x67iml7_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 118,
+      "question_text": "Микроскоптың үлкейту қабілеті неге байланысты?",
+      "answer_options": [
+        "Объектив пен окулярға",
+        "Микроскоптың түсіне",
+        "Зертхананың көлеміне",
+        "Үстелдің биіктігіне",
+        "Жарық шамының сыртқы пішініне"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_rg5j366_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 119,
+      "question_text": "Иммерсиялық объективпен жұмыс істегенде қандай сұйықтық қолданылады?",
+      "answer_options": [
+        "Иммерсиялық май",
+        "Дистилденген су",
+        "Этил спирті",
+        "Натрий хлориді",
+        "Сірке қышқылы"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_5rwpgr4_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 120,
+      "question_text": "Микроскоптың окуляры қандай қызмет атқарады?",
+      "answer_options": [
+        "Кескінді қосымша үлкейту",
+        "Препаратты бояу",
+        "Жарықты толық тоқтату",
+        "Үлгіні қыздыру",
+        "Жасушаны қоректендіру"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_rwumdjm_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 121,
+      "question_text": "Микроскоптың объективі қандай қызмет атқарады?",
+      "answer_options": [
+        "Үлкейтілген кескінін алу",
+        "Препаратты бекіту",
+        "Сұйықтықты өлшеу",
+        "Температураны анықтау",
+        "Бактерияларды жою"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_dnzk30w_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 122,
+      "question_text": "Жағындыны фиксациялау не үшін жүргізіледі?",
+      "answer_options": [
+        "Микроорганизмдерді әйнекке бекіту",
+        "Жасушаларды көбейту үшін",
+        "Қоректік ортаны дайындау үшін",
+        "Вирустарды өсіру үшін",
+        "Судың құрамын өзгерту үшін"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_tbfm695_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 123,
+      "question_text": "Бактерияларды бояудың негізгі мақсаты қандай?",
+      "answer_options": [
+        "Пішіні мен құрылымын жақсы көру",
+        "Бактерияларды қоректендіру",
+        "Бактериялардың санын арттыру",
+        "Бактерияларды қозғалтуды күшейту",
+        "Қоректік ортаны стерильдеу"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_j3d6arr_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 124,
+      "question_text": "Спораларды анықтауға арналған бояу әдістері не үшін қолданылады?",
+      "answer_options": [
+        "Сспораларын анықтау үшін",
+        "Тек вирустарды анықтау үшін",
+        "Судың тұздылығын өлшеу үшін",
+        "Ақуыз мөлшерін анықтау үшін",
+        "Қант мөлшерін анықтау үшін"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_rkjf1b1_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 125,
+      "question_text": "Капсуланы анықтаудың маңызы қандай?",
+      "answer_options": [
+        "Қорғаныш құрылымын зерттеу",
+        "Бактериялардың энергиясын өлшеу",
+        "Жасуша температурасын анықтау",
+        "Қоректік ортаның рН-ын өзгерту",
+        "Вирустарды көбейту"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_0hz2s9u_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 126,
+      "question_text": "Микроорганизмдерді жіктеудің негізгі мақсаты қандай?",
+      "answer_options": [
+        "Белгілеріне қарай топтастыру",
+        "Олардың түсін өзгерту",
+        "Өсуін тоқтату үшін",
+        "Қоректік заттарды жою үшін",
+        "Жасушаны бұзу үшін"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_b1ixt1o_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 127,
+      "question_text": "Бактерияларды жіктеуде қандай белгілер ескеріледі?",
+      "answer_options": [
+        "Морфологиялық, физиологиялық, генетикалық белгілері",
+        "Тек түсі, иісі, физиологиялық белгілері",
+        "Тек иісі",
+        "Тек өлшемі, морфологиялық- генетикалық белгілері ескеріледі",
+        "Тек тіршілік ортасының температурасы"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_qpz9eoy_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 128,
+      "question_text": "Бактериялардың ғылыми атауы қандай жүйемен беріледі?",
+      "answer_options": [
+        "Екі атаулы номенклатура жүйемен",
+        "Тек сандық жүйемен",
+        "Тек қысқартылған әріптермен",
+        "Тек жергілікті атаулармен",
+        "Тек химиялық формуламен"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_rzqpngd_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 129,
+      "question_text": "Екі атаулы номенклатурада бірінші сөз нені білдіреді?",
+      "answer_options": [
+        "Туысын",
+        "Түр ішіндегі штаммды",
+        "Отбасын",
+        "Класты",
+        "Қатарды"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_b0pgwc2_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 130,
+      "question_text": "Екі атаулы номенклатурада екінші сөз нені білдіреді?",
+      "answer_options": [
+        "Түр атауын",
+        "Туысын",
+        "Отбасын",
+        "Класты",
+        "Доменді"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_hwsk9uk_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 131,
+      "question_text": "Бактериялардың негізгі домені қалай аталады?",
+      "answer_options": [
+        "Bacteria",
+        "Plantae",
+        "Animalia",
+        "Fungi",
+        "Protista"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_3e8flzx_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 132,
+      "question_text": "Археялар қандай ағзалар тобына жатады?",
+      "answer_options": [
+        "Прокариотты микроорганизмдерге",
+        "Көпжасушалы жануарларға",
+        "Жоғары сатыдағы өсімдіктерге",
+        "Омыртқалыларға",
+        "Құстарға"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_cslfvvh_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 133,
+      "question_text": "Саңырауқұлақтар жасушасының ерекшелігі қандай?",
+      "answer_options": [
+        "Эукариотты жасушаға ие",
+        "Ядросы мүлде болмайды",
+        "Тек ДНҚ-дан тұрады",
+        "Жасушалық құрылымы болмайды",
+        "Тек ақуыздан тұрады"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_blub9b1_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 134,
+      "question_text": "Ашытқылар қандай микроорганизмдер тобына жатады?",
+      "answer_options": [
+        "Саңырауқұлақтарға",
+        "Бактерияларға",
+        "Вирустарға",
+        "Археяларға",
+        "Қарапайымдылардың барлығына"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_kd50lq5_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 135,
+      "question_text": "Зең саңырауқұлақтарының денесін құрайтын жіпшелер қалай аталады?",
+      "answer_options": [
+        "Гифалар",
+        "Талшықтар",
+        "Капсулалар",
+        "Рибосомалар",
+        "Нуклеоидтар"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_oty6bp9_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 136,
+      "question_text": "Гифалардың жиынтығы қалай аталады?",
+      "answer_options": [
+        "Мицелий",
+        "Капсид",
+        "Нуклеоид",
+        "Колония",
+        "Вирион"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_uv4usj4_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 137,
+      "question_text": "Ашытқылардың жиі кездесетін көбею жолы қандай?",
+      "answer_options": [
+        "Бүршіктену",
+        "Екіге бөліну ғана",
+        "Спорасыз тіршілік",
+        "Тозаңдану",
+        "Ұрықтану"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_4n58o42_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 138,
+      "question_text": "Саңырауқұлақтардың жасуша қабырғасында кездесетін негізгі заттардың бірі қандай?",
+      "answer_options": [
+        "Хитин",
+        "Пептидогликан",
+        "Крахмал",
+        "Гликоген ғана",
+        "Целлюлоза ғана"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_6rx6h96_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 139,
+      "question_text": "Қарапайымдылар қандай ағзаларға жатады?",
+      "answer_options": [
+        "Біржасушалы эукариоттарға",
+        "Прокариоттарға",
+        "Вирустарға",
+        "Көпжасушалы өсімдіктерге",
+        "Бактерияларға"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_tej0ymf_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 140,
+      "question_text": "Балдырлардың негізгі ерекшелігі қандай?",
+      "answer_options": [
+        "Фотосинтез жүргізе алады",
+        "Тек паразиттік тіршілік етеді",
+        "Жасушасы болмайды",
+        "Тек жануарларда көбейеді",
+        "Тек спора арқылы тіршілік етеді"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_u395oc1_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 141,
+      "question_text": "Тағамдық микробиология нені зерттейді?",
+      "answer_options": [
+        "Тағам өнімдеріндегі микроорганизмдерді",
+        "Тек топырақ құрамындағы организмдерді",
+        "Тек жануарлардың мінез-құлқын",
+        "Тек өсімдіктердің құрылысын",
+        "Тек минералдардың қасиетін"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_d7v2l7v_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 142,
+      "question_text": "Айран өндіруде қандай микроорганизмдер маңызды рөл атқарады?",
+      "answer_options": [
+        "Сүт қышқылды бактериялар",
+        "Патогенді вирустар",
+        "Мұнай тотықтырушы бактериялар",
+        "Тек цианобактериялар",
+        "Тек шіріткіш бактериялар"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_aucoejw_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 143,
+      "question_text": "Йогурт өндірісінде қолданылатын негізгі бактериялар қандай?",
+      "answer_options": [
+        "Lactobacillus delbrueckii subsp. bulgaricus",
+        "Escherichia coli және Salmonella enterica",
+        "Clostridium botulinum және Bacillus anthracis",
+        "Vibrio cholerae және Shigella dysenteriae",
+        "Mycobacterium tuberculosis және Yersinia pestis"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_qfbl9ol_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 144,
+      "question_text": "Сүт қышқылды ашу кезінде сүт қанты қалай аталады?",
+      "answer_options": [
+        "Лактоза",
+        "Сахароза",
+        "Мальтоза",
+        "Фруктоза",
+        "Крахмал"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_dwzale4_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 145,
+      "question_text": "Нан өндірісінде қандай микроорганизм қолданылады?",
+      "answer_options": [
+        "Sac. cerevisiae",
+        "Escherichia coli",
+        "Salmonella typhi",
+        "Vibrio cholerae",
+        "Clostridium tetani"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_6qr3w6c_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 146,
+      "question_text": "Нан қамырының көтерілуіне не себеп болады?",
+      "answer_options": [
+        "Ашытқылар түзетін көмірқышқыл газы",
+        "Тек оттегінің жиналуы әсерінен болады",
+        "Азоттың бөлінуі себеп болады",
+        "Аммиактың түзілуі артады",
+        "Судың қатуы"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_be4zzh8_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 147,
+      "question_text": "Сірке суын өндіруде қандай бактериялар қолданылады?",
+      "answer_options": [
+        "Сірке қышқылды бактериялар",
+        "Сүт қышқылды бактериялар ғана",
+        "Түйнек бактериялары",
+        "Патогенді кокктар",
+        "Бактериофагтар"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_ha5ok30_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 148,
+      "question_text": "Кефир өндірісінде қандай микроорганизмдер кездеседі?",
+      "answer_options": [
+        "Сүт қышқылды бактериялар",
+        "Тек вирустар",
+        "Тек патогенді бактериялар",
+        "Тек зең саңырауқұлақтары",
+        "Тек цианобактериялар"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_j6s65pt_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 149,
+      "question_text": "Пробиотиктер дегеніміз не?",
+      "answer_options": [
+        "Ағзаға түскенде пайдалы тірі микроорганизмдер",
+        "Тек химиялық жолмен ағзаға түскен консерванттар",
+        "Зиянды бактериялар арқылы түскен тірі микроорганизмдер",
+        "Вирустардың барлық түрлері",
+        "Минералды тыңайтқыштар"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_g8r6x42_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 150,
+      "question_text": "Пребиотиктер дегеніміз не?",
+      "answer_options": [
+        "Пайдалы микроорганизмдердің өсуі мен белсенділігін қолдайтын",
+        "Патогенді вирустардың өсуі мен белсенділігін қолдайтын заттар",
+        "Антибиотиктердің барлық түрлері",
+        "Тек минералды тұздар",
+        "Зиянды бактериялардың өсуі мен белсенділігін жоятын заттар"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_0wehwvu_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 151,
+      "question_text": "Биотехнологияда микроорганизмдерді өсіруге арналған аппарат қалай аталады?",
+      "answer_options": [
+        "Биореактор",
+        "Микроскоп",
+        "Термометр",
+        "Барометр",
+        "Калориметр"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_r8wmxqh_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 152,
+      "question_text": "Биореактордың негізгі қызметі қандай?",
+      "answer_options": [
+        "Микроорганизмдерді өсіру",
+        "Микроорганизмдерді микроскоппен қарау",
+        "Жасушаларды бояу",
+        "Қоректік ортаны мұздату",
+        "Зертхананы жарықтандыру"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_halex72_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 153,
+      "question_text": "Биотехнологиялық өндірісте ферментация дегеніміз не?",
+      "answer_options": [
+        "Биохимиялық процесс",
+        "Тек суды буландыру",
+        "Тек механикалық ұсақтау",
+        "Тек заттарды сүзу",
+        "Тек ерітінділерді салқындату"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_716zzkg_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 154,
+      "question_text": "Биогаздың негізгі құрамдас бөлігі қандай?",
+      "answer_options": [
+        "Метан",
+        "Оттегі",
+        "Азот қышқылы",
+        "Хлор",
+        "Озон"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_xx5e4so_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 155,
+      "question_text": "Биогаз өндіруде қандай микроорганизмдер маңызды?",
+      "answer_options": [
+        "Метан түзуші археялар",
+        "Тек сүт қышқылды бактериялар",
+        "Тек вирустар",
+        "Тек фотосинтездеуші балдырлар",
+        "Тек патогенді кокктар"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_7l4znrs_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 156,
+      "question_text": "Зертханалық қауіпсіздіктің негізгі мақсаты қандай?",
+      "answer_options": [
+        "Биологиялық қауіптен қорғау",
+        "Микроорганизмдердің санын көбейту үшін",
+        "Қоректік ортаны бояу үшін",
+        "Жұмыс уақытын ұзарту үшін",
+        "Зертхананың температурасын көтеру"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_1qodywh_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 157,
+      "question_text": "Биологиялық қалдықтарды қалай жою қажет?",
+      "answer_options": [
+        "Белгіленген залалсыздандыру арқылы",
+        "Кәдімгі қоқысқа араластырып тастау арқылы",
+        "Ашық жерде қалдыру арқылы",
+        "Су құбырына төгу арқылы",
+        "Зертханалық үстелде сақтау"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_qpiqybw_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 158,
+      "question_text": "Зертханалық құралдарды залалсыздандыру үшін не қолданылады?",
+      "answer_options": [
+        "Автоклавтау, дезинфекциялау",
+        "Тек сумен шаю",
+        "Тек құрғақ шүберекпен сүрту",
+        "Тек салқындату",
+        "Тек жарықтандыру"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_fl6novg_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 159,
+      "question_text": "Антибиотиктердің әсер ету механизміне не жатады?",
+      "answer_options": [
+        "Ақуыз синтезін тежеу",
+        "Барлық вирустардың геномын жою",
+        "Адам жасушаларын көбейту",
+        "Қанның құрамын өзгерту",
+        "Ағзадағы суды толық жою"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_kztyaku_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 160,
+      "question_text": "Бактерицидтік әсер дегеніміз не?",
+      "answer_options": [
+        "Бактерияларды жою",
+        "Бактериялардың өсуін жылдамдату",
+        "Бактерияларды бояу",
+        "Бактериялардың қозғалуын арттыру",
+        "Бактериялардың қоректенуін күшейту"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_ajpv4su_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 161,
+      "question_text": "Бактериостатикалық әсер дегеніміз не?",
+      "answer_options": [
+        "Бактериялардың көбеюін тежеу",
+        "Бактерияларды бірден жою",
+        "Бактериялардың санын көбейту",
+        "Бактериялардың түсін өзгерту",
+        "Бактериялардың спора түзуін күшейту"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_uqlnicm_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 162,
+      "question_text": "Антибиотикке сезімталдықты анықтаудың кең таралған әдісі қандай?",
+      "answer_options": [
+        "Диск-диффузиялық",
+        "Тек Грам әдісі",
+        "Тек бояу әдісі",
+        "Тек центрифугалау",
+        "Тек дистилдеу"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_4hcwlwn_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 163,
+      "question_text": "Диск-диффузиялық әдісте антибиотиктің әсері қалай бағаланады?",
+      "answer_options": [
+        "Өсу аймағының диаметрін өлшеу арқылы",
+        "Қоректік ортаның түсін ғана анықтау арқылы",
+        "Бактерияның пішінін өлшеу арқылы",
+        "Судың көлемін анықтау арқылы",
+        "Температураны өлшеу арқылы"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_z8ki7gj_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 164,
+      "question_text": "Антибиотикке төзімділіктің пайда болуына не себеп болуы мүмкін?",
+      "answer_options": [
+        "Төзімділік гендерінің берілуі",
+        "Тек жарықтың әсері",
+        "Тек судың булануы",
+        "Тек температураның төмендеуі",
+        "Тек қоректік ортаның түсі"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_5lybnip_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 165,
+      "question_text": "Антибиотиктерді орынсыз қолдану қандай қауіп тудырады?",
+      "answer_options": [
+        "Антибиотикке төзімді бактериялар артады",
+        "Барлық вирустарды жояды",
+        "Иммунитетті әрдайым күшейтеді",
+        "Бактериялардың барлық түрін пайдалы етеді",
+        "Ағзаның жасушаларын көбейтеді"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_nshkmd5_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 166,
+      "question_text": "Бактериялардың негізгі генетикалық материалы қандай?",
+      "answer_options": [
+        "ДНҚ",
+        "Крахмал",
+        "Целлюлоза",
+        "Хитин",
+        "Липид"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_r18det0_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 167,
+      "question_text": "ДНҚ молекуласының негізгі қызметі қандай?",
+      "answer_options": [
+        "Ақпаратты сақтау",
+        "Энергияны тікелей өндіру",
+        "Жасушаны механикалық қорғау",
+        "Су тасымалдау",
+        "Жасушаны бояу"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_9drc07b_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 168,
+      "question_text": "Ген дегеніміз не?",
+      "answer_options": [
+        "Тұқым қуалайтын ақпаратты кодтайды",
+        "Жасушаның сыртқы қабатындағы бөлігі",
+        "Ақуыздың толық жиынтығының көшірмесі",
+        "Қоректік ортаның компонентінің құрамы",
+        "Бактерияның талшығы"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_ffn6owx_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 169,
+      "question_text": "Плазмида дегеніміз не?",
+      "answer_options": [
+        "Бактерияларда кездесетін ДНҚ молекуласы",
+        "Жасуша қабырғасының бөлігіндегі ДНҚ молекуласы",
+        "Вирустың ақуыз қабықшасы",
+        "Жасушаның сыртқы капсуласы",
+        "Рибосоманың бөлігі"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_p91ovcx_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 170,
+      "question_text": "Генетикалық ақпараттың ДНҚ-дан РНҚ-ға көшірілуі қалай аталады?",
+      "answer_options": [
+        "Транскрипция",
+        "Трансляция",
+        "Репликация",
+        "Мутация",
+        "Конъюгация"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_pztvhix_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 171,
+      "question_text": "РНҚ негізінде ақуыз синтезі қалай аталады?",
+      "answer_options": [
+        "Трансляция",
+        "Репликация",
+        "Транскрипция",
+        "Конъюгация",
+        "Трансформация"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_fgggtkq_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 172,
+      "question_text": "ДНҚ молекуласының екі еселенуі қалай аталады?",
+      "answer_options": [
+        "Репликация",
+        "Трансляция",
+        "Транскрипция",
+        "Ферментация",
+        "Гликолиз"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_t4hvjhd_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 173,
+      "question_text": "Бактериялар арасындағы генетикалық материалдың тікелей берілуі қалай аталады?",
+      "answer_options": [
+        "Конъюгация",
+        "Транскрипция",
+        "Трансляция",
+        "Гликолиз",
+        "Фотосинтез"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_lo3eet8_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 174,
+      "question_text": "Бактериялардың қоршаған ортадан бос ДНҚ қабылдауы қалай аталады?",
+      "answer_options": [
+        "Трансформация",
+        "Конъюгация",
+        "Трансляция",
+        "Репликация",
+        "Ферментация"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_ekejt7y_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 175,
+      "question_text": "Бактериофаг арқылы генетикалық материалдың берілуі қалай аталады?",
+      "answer_options": [
+        "Трансдукция",
+        "Трансформация",
+        "Конъюгация",
+        "Транскрипция",
+        "Репликация"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_far7yns_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 176,
+      "question_text": "Мутация дегеніміз не?",
+      "answer_options": [
+        "Генетикалық материалдағы тұрақты өзгеріс",
+        "Жасушаның уақытша ісінуі",
+        "Бактерияның қоректенуі",
+        "Жасушаның боялуы",
+        "Қоректік ортаның өзгеруі"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_ee9sqof_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 177,
+      "question_text": "ПТР әдісінің толық атауы қандай?",
+      "answer_options": [
+        "Полимеразалық тізбекті реакция",
+        "Протеиндік талдау реакциясы",
+        "Плазмалық тасымалдау реакциясы",
+        "Пептидтік тізбек реакциясы",
+        "Полисахаридтік талдау реакциясы"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_i2hi1nv_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 178,
+      "question_text": "ПТР әдісінің негізгі мақсаты қандай?",
+      "answer_options": [
+        "ДНҚ-ның бөлігін көбейту",
+        "Ақуыздарды толық жою",
+        "Бактерияларды бояу",
+        "Суды тазарту",
+        "Жасушаларды мұздату"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_9g0mvcl_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 179,
+      "question_text": "Гендік инженерия дегеніміз не?",
+      "answer_options": [
+        "Генетикалық материалды өзгерту",
+        "Микроорганизмдерді тек бояу",
+        "Жасушаларды механикалық бөлу",
+        "Қоректік ортаны дайындау",
+        "Микроскопты реттеу"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_76v8ofu_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 180,
+      "question_text": "Генетикалық модификацияланған организм дегеніміз не?",
+      "answer_options": [
+        "Генетикасы өзгертілген организм",
+        "Табиғатта кездесетін барлық бактериялар",
+        "Генетикалық материалды өзгерту",
+        "Тек саңырауқұлақ споралары",
+        "Тек өсімдік жасушалары"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_8s0xou0_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 181,
+      "question_text": "Биотехнология дегеніміз не?",
+      "answer_options": [
+        "биологиялық жүйелерді пайдаланып өнім алу технологиясы",
+        "Тек металдарды пайдаланып өнім алу технологиясы",
+        "Тек тау жыныстарын пайдаланып өнім алу технологиясы",
+        "Тек электр энергиясын пайдаланып өнім алу технологиясы",
+        "Тек механикалық құралдарды пайдаланып өнім алу технологиясы"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_l2xvxhg_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 182,
+      "question_text": "Өнеркәсіптік микробиологияда микроорганизмдер не үшін қолданылады?",
+      "answer_options": [
+        "Ферменттер, биологиялық өнімдер алу",
+        "Тек металдарды, пластикті механикалық балқыту үшін",
+        "Тек пластикті механикалық кесу үшін",
+        "Тек суды буландыру үшін",
+        "Тек жарық шығару үшін"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_6w4itfw_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 183,
+      "question_text": "Лимон қышқылын өнеркәсіптік өндіруде қандай микроорганизм қолданылады?",
+      "answer_options": [
+        "Aspergillus niger",
+        "Escherichia coli",
+        "Salmonella enterica",
+        "Vibrio cholerae",
+        "Clostridium tetani"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_fc8fy3z_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 184,
+      "question_text": "Пенициллин антибиотигін өндіретін саңырауқұлақ қайсысы?",
+      "answer_options": [
+        "Penicillium chrysogenum",
+        "Saccharomyces cerevisiae",
+        "Aspergillus niger",
+        "Candida albicans",
+        "Rhizopus stolonifer"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_d3kqehl_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 185,
+      "question_text": "Микробтық ферменттер қандай салаларда қолданылады?",
+      "answer_options": [
+        "Тағам, медицина, тоқыма",
+        "Тек құрылыс саласында",
+        "Тек металлургияда",
+        "Тек ғарыш техникасында",
+        "Тек геологияда"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_3fz2e1s_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 186,
+      "question_text": "Протеаза ферменті қандай заттарды ыдыратады?",
+      "answer_options": [
+        "Ақуыздарды",
+        "Көмірсуларды",
+        "Липидтерді",
+        "Нуклеин қышқылдарын ғана",
+        "Минералды тұздарды"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_69k7tp6_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 187,
+      "question_text": "Амилаза ферментінің қызметі қандай?",
+      "answer_options": [
+        "Крахмалды ыдырату",
+        "Ақуыздарды ыдырату",
+        "Майларды ыдырату",
+        "ДНҚ синтездеу",
+        "Липидтерді синтездеу"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_pnbcagv_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 188,
+      "question_text": "Липаза ферменті қандай заттарға әсер етеді?",
+      "answer_options": [
+        "Майларға",
+        "Ақуыздарға",
+        "Крахмалға",
+        "Нуклеин қышқылдарына",
+        "Минералды тұздарға"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_zwnpl2x_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 189,
+      "question_text": "Биологиялық белсенді заттарды өндіруде қандай микроорганизмдер қолданылады?",
+      "answer_options": [
+        "Ііріктелген өндірістік штаммдар",
+        "Тек патогенді бактериялар",
+        "Тек вирустар",
+        "Тек ауру қоздырғыштары",
+        "Тек кездейсоқ микроорганизмдер"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_zww1nr7_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 190,
+      "question_text": "Биотехнологиядағы штамм дегеніміз не?",
+      "answer_options": [
+        "Тұрақты қасиеті бар ағзалар",
+        "Қоректік ортаның бір түрі",
+        "Микроскоптың бір бөлігі болып табылады",
+        "Жасушаның қабықшасы",
+        "Вирустың ақуыз қабаты"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_nq9ir06_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 191,
+      "question_text": "Биосинтез дегеніміз не?",
+      "answer_options": [
+        "Ккүрделі органикалық заттардың түзілуі",
+        "Тек заттардың механикалық ұсақталуы",
+        "Тек судың булануы",
+        "Тек ерітіндінің салқындауы",
+        "Тек минералдардың тұнуы"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_pc5cplw_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 192,
+      "question_text": "Биотехнологиялық өнімнің сапасын бақылау не үшін қажет?",
+      "answer_options": [
+        "Өнімнің қауіпсіздігін қамтамасыз ету үшін",
+        "Өнімнің түсін ғана өзгерту үшін",
+        "Өнім көлемін азайту үшін",
+        "Өндіріс уақытын ұзарту үшін",
+        "Микроорганизмдерді кездейсоқ көбейту үшін"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_a5pmq40_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 193,
+      "question_text": "Микробиологиялық өндірісте стерильді жағдай не үшін қажет?",
+      "answer_options": [
+        "Микроорганизмдердің өндірістік дақылды ластамауы үшін",
+        "Өнімнің түсін өзгерту үшін",
+        "Температураны көтеру үшін",
+        "Қоректік ортаны кептіру үшін",
+        "Қысымды төмендету үшін"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_lifl3dn_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 194,
+      "question_text": "Биоэтанол өндіруде қандай микроорганизм жиі пайдаланылады?",
+      "answer_options": [
+        "Saccharomyces cerevisiae",
+        "Vibrio cholerae",
+        "Salmonella typhi",
+        "Mycobacterium tuberculosis",
+        "Clostridium tetani"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_lxbnlo6_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 195,
+      "question_text": "Биологиялық тыңайтқыштар дегеніміз не?",
+      "answer_options": [
+        "пайдалы препараттар",
+        "Тек химиялық пестицидтер",
+        "Тек минералды тұздар",
+        "Тек синтетикалық бояғыштар",
+        "Тек органикалық еріткіштер"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_wp63vgn_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 196,
+      "question_text": "Микориза дегеніміз не?",
+      "answer_options": [
+        "Саңырауқұлақтар арасындағы симбиоз",
+        "Бактериялар мен вирустардың қосындысы",
+        "Екі бактерияның ауру тудыруы",
+        "Өсімдіктің жапырақтарының түсуі",
+        "Жасушаның бөлінуі"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_f9qqs7y_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 197,
+      "question_text": "Микроорганизмдердің биосорбция қабілеті дегеніміз не?",
+      "answer_options": [
+        "Байланыстыру қабілеті",
+        "Күн сәулесін толық сіңіру",
+        "Оттегіні түгел жою",
+        "Суды толық буландыру",
+        "Қоректік ортаны бояу"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_eiuioko_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 198,
+      "question_text": "Ағынды суларды биологиялық тазартуда қандай микроорганизмдер маңызды?",
+      "answer_options": [
+        "Ыдырататын микроорганизмдер",
+        "Тек патогенді вирустар",
+        "Тек өсімдік тұқымдары мен микроорганизмдер",
+        "Тек паразиттік құрттар",
+        "Тек минералды кристалдар"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_21eicfd_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 199,
+      "question_text": "Микробиологиялық мониторинг дегеніміз не?",
+      "answer_options": [
+        "Қоршаған ортаны жүйелі бақылау",
+        "Тек ауа температурасын өлшеу және жүйелі бақылау",
+        "Тек судың түсін анықтау",
+        "Тек топырақтың массасын өлшеу",
+        "Тек өсімдіктердің биіктігін анықтау"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_iac4ldh_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 200,
+      "question_text": "Микробиология мен биотехнологияның өзара байланысы қандай?",
+      "answer_options": [
+        "Микроорганизмдерді зерттеу бағыты",
+        "Екі ғылымның арасында байланыс жоқ",
+        "Биотехнология тек жануарларды зерттейді",
+        "Микробиология тек тау жыныстарын зерттейді",
+        "Екі ғылым тек физикамен байланысты"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_79u5lsh_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 201,
+      "question_text": "Бактерия жасушасының цитоплазмалық мембранасы қандай қызмет атқарады?",
+      "answer_options": [
+        "Заттардың енуі мен шығуын реттейді",
+        "Генетикалық ақпаратты сақтайды",
+        "Ақуыз синтездейді",
+        "Спора түзеді",
+        "Жасушаны қозғалысқа келтіреді"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_v8ulv4m_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 202,
+      "question_text": "Бактерия жасушасындағы плазмида қандай қызмет атқарады?",
+      "answer_options": [
+        "Генетикалық ақпаратты тасымалдайды",
+        "Жасушаны механикалық қорғайды",
+        "Энергияны тікелей өндіреді",
+        "Қоректік заттарды ыдыратады",
+        "Жасушаны бояйды"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_ks5r2vq_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 203,
+      "question_text": "Микроорганизмдердің қозғалуын зерттеу үшін қандай әдіс қолданылады?",
+      "answer_options": [
+        "Ілінген тамшы әдісі",
+        "Грам әдісі",
+        "Диск-диффузиялық әдіс",
+        "Титрлеу әдісі",
+        "Фильтрлеу әдісі"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_dzzco92_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 204,
+      "question_text": "Бактериялардың спора түзуінің негізгі мақсаты қандай?",
+      "answer_options": [
+        "Қолайсыз ортада тіршілігін сақтау",
+        "Қоректік заттарды көбейту",
+        "Қозғалу жылдамдығын арттыру",
+        "Ақуыз синтезін күшейту",
+        "Жасушаның көлемін ұлғайту"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_83bmw8v_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 205,
+      "question_text": "Микроорганизмдердің қышқыл ортада тіршілік етуге бейімділігі қалай аталады?",
+      "answer_options": [
+        "Ацидофилдік",
+        "Термофилдік",
+        "Галофилдік",
+        "Психрофилдік",
+        "Алкалифилдік"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_wiqjr2l_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 206,
+      "question_text": "Микроорганизмдердің сілтілі ортада өсуге бейімділігі қалай аталады?",
+      "answer_options": [
+        "Алкалифилдік",
+        "Ацидофилдік",
+        "Психрофилдік",
+        "Термофилдік",
+        "Галофилдік"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_hv1os7g_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 207,
+      "question_text": "Микроорганизмдердің өсуіне қажетті сутектік көрсеткіш қалай белгіленеді?",
+      "answer_options": [
+        "pH",
+        "CO₂",
+        "O₂",
+        "NaCl",
+        "ATP"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_bq8y437_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 208,
+      "question_text": "Бактериялардың жасуша қабырғасын зерттеуде қандай бояу әдісі қолданылады?",
+      "answer_options": [
+        "Грам әдісі",
+        "Романовский әдісі",
+        "Циль–Нильсен әдісі",
+        "Нейтралды қызыл әдісі",
+        "Метилен көгі әдісі"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_y9gctjx_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 209,
+      "question_text": "Қышқылға төзімді бактерияларды анықтау үшін қандай әдіс қолданылады?",
+      "answer_options": [
+        "Циль–Нильсен әдісі",
+        "Грам әдісі",
+        "Гимза әдісі",
+        "Бурри әдісі",
+        "Леффлер әдісі"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_44x0yvt_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 210,
+      "question_text": "Микроорганизмдердің биохимиялық қасиеттерін анықтау не үшін қажет?",
+      "answer_options": [
+        "Түрін анықтау және сәйкестендіру үшін",
+        "Жасушаның түсін өзгерту үшін",
+        "Қоректік ортаны кептіру үшін",
+        "Микроскоптың үлкейтуін арттыру үшін",
+        "Температураны төмендету үшін"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_7cmhfmv_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 211,
+      "question_text": "Вирустардың жасушалық құрылымы бар ма?",
+      "answer_options": [
+        "Жоқ, вирустар жасушасыз",
+        "Иә, толыққанды ядросы бар",
+        "Иә, митохондриясы бар",
+        "Иә, рибосомалары бар",
+        "Иә, цитоплазмасы бар"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_5r2gj6o_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 212,
+      "question_text": "Вирустардың иесі болып қандай организмдер саналады?",
+      "answer_options": [
+        "Адамдар, жануарлар, өсімдіктер, бактериялар",
+        "Тек адамдар, қарапайымдылар, өсімдіктер",
+        "Тек өсімдіктер, қылқанжапырақтар, саңырауқұлақтар",
+        "Тек бактериялар",
+        "Тек саңырауқұлақтар"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_txark3m_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 213,
+      "question_text": "Тұмау ауруының қоздырғышы қандай?",
+      "answer_options": [
+        "Тұмау вирусы",
+        "Escherichia coli",
+        "Staphylococcus aureus",
+        "Candida albicans",
+        "Bacillus subtilis"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_eftg0ps_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 214,
+      "question_text": "АИТВ қандай жасушаларды зақымдайды?",
+      "answer_options": [
+        "CD4 рецепторы бар Т-хелпер лимфоциттерді",
+        "Эритроциттерді ғана",
+        "Тромбоциттерді ғана",
+        "Сүйек жасушаларын ғана",
+        "Бұлшықет жасушаларын ғана"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_55zmauo_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 215,
+      "question_text": "Вирустық инфекцияның алдын алудың тиімді әдістерінің бірі қандай?",
+      "answer_options": [
+        "Вакцинация",
+        "Антибиотиктерді өз бетінше қабылдау",
+        "Қоректік ортаға себу",
+        "Жасушаларды бояу",
+        "Суды тұндыру"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_kd8w1ru_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 216,
+      "question_text": "Вирустардың генетикалық материалының түрлері қандай?",
+      "answer_options": [
+        "ДНҚ немесе РНҚ",
+        "Тек ақуыз",
+        "Тек липид",
+        "Тек көмірсу",
+        "Тек минералды тұз"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_mn56u3g_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 217,
+      "question_text": "Бактериофагтардың негізгі ерекшелігі қандай?",
+      "answer_options": [
+        "Бактерия жасушаларын зақымдайды",
+        "Тек өсімдіктерді зақымдайды",
+        "Тек саңырауқұлақтарда көбейеді",
+        "Тек жануарлардың қанында тіршілік етеді",
+        "Тек топырақта көбейеді"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_d3gvn1j_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 218,
+      "question_text": "Лизистік цикл кезінде не болады?",
+      "answer_options": [
+        "Вирус көбейіп, жасуша бұзылады",
+        "Бактерия спора түзеді",
+        "Жасуша фотосинтез жүргізеді",
+        "Ақуыз синтезі толық тоқтайды",
+        "Жасуша қабырғасы қалыңдайды"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_2d3s7z5_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 219,
+      "question_text": "Вирустардың генетикалық өзгергіштігіне не себеп болады?",
+      "answer_options": [
+        "Генетикалық материалдағы мутациялар",
+        "Тек судың мөлшері",
+        "Тек қоректік ортаның түсі мен генетикасы",
+        "Тек ауа қысымы",
+        "Тек жарықтың қарқындылығы"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_flkfdpg_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 220,
+      "question_text": "Вирусқа қарсы иммундық жауапта қандай жасушалар маңызды рөл атқарады?",
+      "answer_options": [
+        "Т-лимфоциттер",
+        "Эритроциттер",
+        "Тромбоциттер",
+        "Май жасушалары",
+        "Сүйек жасушалары"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_j9zixmu_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 221,
+      "question_text": "Сүт өнімдерін өндіруде пастерлеудің негізгі мақсаты қандай?",
+      "answer_options": [
+        "Патогенді микроорганизмдерді жою",
+        "Барлық минералдарды жою",
+        "Сүттің құрамындағы суды толық буландыру",
+        "Ақуыздарды толық жою",
+        "Сүттің түсін өзгерту"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_fgii9mm_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 222,
+      "question_text": "Сүт қышқылды бактериялардың негізгі өнімі қандай?",
+      "answer_options": [
+        "Сүт қышқылы",
+        "Метан",
+        "Аммиак",
+        "Оттегі",
+        "Күкіртсутек"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_gprbs4m_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 223,
+      "question_text": "Ашытқылардың жасуша қабырғасында қандай полисахаридтер кездеседі?",
+      "answer_options": [
+        "Глюкандар",
+        "Пептидогликан",
+        "Крахмал",
+        "Целлюлоза ғана",
+        "Гликоген ғана"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_4askugt_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 224,
+      "question_text": "Биотехнологияда өндірістік микроорганизмдерді сақтаудың бір әдісі қандай?",
+      "answer_options": [
+        "Лиофилизация",
+        "Қайнату",
+        "Күйдіру",
+        "Ашық ауада сақтау",
+        "Тікелей күн сәулесіне қою"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_ja9q7mv_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 225,
+      "question_text": "Ферментация процесінде рН көрсеткішін бақылау не үшін қажет?",
+      "answer_options": [
+        "Микроорганизмдердің өсуі мен өнім түзілуіне қолайлы жағдай жасау үшін",
+        "Қоректік ортаның түсін өзгерту үшін",
+        "Микроорганизмдерді бояу үшін",
+        "Ыдыстың көлемін анықтау үшін",
+        "Қысымды толық жою үшін"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_ftxtyga_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 226,
+      "question_text": "Биореактордағы аэрацияның мақсаты қандай?",
+      "answer_options": [
+        "Оттегімен қамтамасыз ету",
+        "Қоректік ортаны мұздату",
+        "Микроорганизмдерді жою",
+        "Сұйықтықты бояу",
+        "Өнімнің массасын өлшеу"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_98vqajl_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 227,
+      "question_text": "Микроорганизмдер арқылы алынатын органикалық қышқылдардың бірі қандай?",
+      "answer_options": [
+        "Лимон қышқылы",
+        "Тұз қышқылы",
+        "Күкірт қышқылы",
+        "Азот қышқылы",
+        "Фосфор қышқылы"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_40i8na4_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 228,
+      "question_text": "Пробиотикалық микроорганизмдерге қандай бактериялар жатады?",
+      "answer_options": [
+        "Lactobacillus және Bifidobacterium",
+        "Salmonella туысының өкілдері",
+        "Shigella туысының өкілдері",
+        "Clostridium botulinum",
+        "Vibrio cholerae"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_b8wjwj3_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 229,
+      "question_text": "Ауыз судың микробиологиялық қауіпсіздігін бағалауда қандай көрсеткіш қолданылады?",
+      "answer_options": [
+        "Бактерияларының болуын анықтау",
+        "Судың түсін ғана анықтау",
+        "Судың температурасын ғана өлшеу",
+        "Судың көлемін өлшеу",
+        "Судың дәмін анықтау"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_8mytfwm_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 230,
+      "question_text": "Колиформды бактериялар қандай мақсатта көрсеткіш микроорганизмдер ретінде қолданылады?",
+      "answer_options": [
+        "Судың ластану ықтималдығын бағалау үшін",
+        "Судың минералдық құрамын анықтау үшін",
+        "Судың температурасын анықтау үшін",
+        "Судағы оттегіні өндіру үшін",
+        "Судың қаттылығын арттыру үшін"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_7k920ju_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 231,
+      "question_text": "Медициналық микробиологияның негізгі міндеті қандай?",
+      "answer_options": [
+        "Қоздырғыштарын зерттеу, анықтау",
+        "Тек өсімдіктердің ауруларын зерттеу",
+        "Тек топырақ құрамын анықтау",
+        "Тек тағам өнімдерінің дәмін зерттеу",
+        "Тек жануарлардың өсуін бақылау"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_g4bcyz4_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 232,
+      "question_text": "Микробиологиялық диагностика дегеніміз не?",
+      "answer_options": [
+        "Ауру қоздырғыштарын анықтау",
+        "Аурудың белгілерін тек сырттай бақылау",
+        "Қан қысымын өлшеу",
+        "Дене температурасын ғана анықтау",
+        "Ағзаның салмағын өлшеу"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_2acx1k9_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 233,
+      "question_text": "Жәй көзге көрінбейтін микроорганизмдер жасушасын зерттеуге арналған оптикалық құрал:",
+      "answer_options": [
+        "микроскоп",
+        "ферментер",
+        "рН-метр",
+        "термостат",
+        "вакуум-насос"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_79gcfk8_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 234,
+      "question_text": "Қоректік орталарды, ыдыстар мен басқа да материалдарды қаныққан бу қысымымен залалсыздандыруға арналған құрал:",
+      "answer_options": [
+        "автоклав",
+        "термостат",
+        "микроскоп",
+        "ферментер",
+        "рН-метр"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_xyuyroe_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 235,
+      "question_text": "Микроорганизмдерді егу мен залалсыз ортаны қажет ететін жұмыстарды жүргізуге арналған бөлме:",
+      "answer_options": [
+        "боксты",
+        "виварийді",
+        "автоклавты",
+        "термостатты",
+        "қоректік ортаны қайнататын"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_2b7zoqz_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 236,
+      "question_text": "Залалсыздандыруға арналған бөлме:",
+      "answer_options": [
+        "автоклав",
+        "термостат",
+        "қоректік ортаны қайнататын",
+        "бокс",
+        "виварий"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_ues8yxw_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 237,
+      "question_text": "Қоректік орталарды дайындауға арналған бөлме:",
+      "answer_options": [
+        "қоректік ортаны қайнататын",
+        "термостат орналасқан",
+        "боксты",
+        "виварийлі",
+        "автоклав орналасқан"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_0q88iwr_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 238,
+      "question_text": "Жәй көзге көрінбейтін организмдердің ауқымды тобы:",
+      "answer_options": [
+        "микроорганизмдер",
+        "жоғары сатыдағы өсімдіктер",
+        "ассоциациялар",
+        "протопласттар",
+        "каллустар"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_pdzgktn_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 239,
+      "question_text": "Микрорганизмдердің көбею мен тіршілік процестерін қамтамасыз ету үшін жасанды жағдайды жасау:",
+      "answer_options": [
+        "м.о. култивирлеу",
+        "м.о. коагуляциясы",
+        "м.о. ассимиляциясы",
+        "м.о. тұзсыздандыруы",
+        "м.о. фиксациясы"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_vpr3aqw_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 240,
+      "question_text": "Қажетті параметрлерді қосып, үздіксіз аэрация жағдайында сұйық қоректік ортада микроорганизм өсіру:",
+      "answer_options": [
+        "түптік култивирлеу",
+        "беттік культивирлеу",
+        "периодты культивирлеу",
+        "субкультивирлеу",
+        "тубулярлы культивирлеу"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_0jr59q9_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 241,
+      "question_text": "Микроорганизмдерді қатты қоректік ортада өсіру:",
+      "answer_options": [
+        "беттік култивирлеу",
+        "түптік культивирлеу",
+        "үздіксіз культивирлеу",
+        "тубулярлы культивирлеу",
+        "субкультивирлеу"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_7ih57q6_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 242,
+      "question_text": "Микробиологиялық синтез жүретін аппарат (реактор):",
+      "answer_options": [
+        "ферментер",
+        "центрифуга",
+        "вакуум-насос",
+        "электролиз",
+        "сепаратор"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_63gftpf_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 243,
+      "question_text": "Культивирлеу процесін сипаттайтын химиялық көрсеткіштер:",
+      "answer_options": [
+        "рН, КЖ-ғы О2 мен СО2 концентрациясы",
+        "температура, қысым, рН, тұтқырлық,",
+        "рН, температура, қысым, тұтқырлық О2 мен СО2 концентрациясы",
+        "О2 мен СО2 концентрациясы, тұтқырлық, температура, қысым, рН",
+        "қысым, тұтқырлық , температура"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_86z9tg2_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 244,
+      "question_text": "Культивирлеу процесін сипаттайтын физикалық көрсеткіштер:",
+      "answer_options": [
+        "температура, қысым, сыйымдылық, тұтқырлық",
+        "О2 мен СО2 концентрациясы, рН, температура, қысым",
+        "температура, О2 мен СО2 концентрациясы, қысым, сыйымдылық",
+        "температура, қысым, О2 мен СО2 концентрациясы",
+        "рН, О2 мен СО2 концентрациясы"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_acazjq6_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 245,
+      "question_text": "Биомассадан соңғы өнімді бөліп алу мақсатында дезинтеграциялау үшін қолдануға болады:",
+      "answer_options": [
+        "ультрадыбысты қондырғыларды",
+        "антибиотиктерді",
+        "УК-сәулелендіру қондырғылары",
+        "араластыру қондырғылары",
+        "центрифугалар"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_96ysjeu_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 246,
+      "question_text": "Периодты залалсыздандыруда мына режим сақталады:",
+      "answer_options": [
+        "t= 121ºC, p=100кПа",
+        "t= 141ºC, p= 200кПа",
+        "t= 160ºC, p=400 кПа",
+        "t= 180ºC, p=600 кПа",
+        "t= 200ºC, p=800кПа"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_sexc7rf_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 247,
+      "question_text": "Бокс микробиологиялық жабық көлем (бөлме) – ол ережедерді ұстауды қамтамасыз етеді:",
+      "answer_options": [
+        "техника қауіпсіздігі мен асептиканы",
+        "өртке қарсы техниканы",
+        "химиялық реактивтермен жұмыс жасауды",
+        "химиялық лабораторияда жұмыс жасауды",
+        "залалсыздандырылмаған жағдайда м.о. жұмыс жасау"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_6v415v8_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 248,
+      "question_text": "Биотехнология – биологиялық организмдердің, жүйелер мен процестердің . . . қолданылуы:",
+      "answer_options": [
+        "өндіру мен қызмет көрсету саласында",
+        "әртүрлі м.о. алу мақсатында",
+        "спирт өндірісі мақсатында",
+        "залалсыздандыру саласында",
+        "азықтық өнідіріс саласында"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_9pw6dz6_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 249,
+      "question_text": "Автоклавтау – қазіргі заманғы қолданысқа негізделген залалсыздандыру әдісі:",
+      "answer_options": [
+        "сулы будың артық қысымына",
+        "рентгенді және УК сәулелендіруге",
+        "температура мен араластыруға",
+        "қысыммен араластыруға",
+        "жоғары температурамен сәулелендіруге"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_u9w9aq6_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 250,
+      "question_text": "Автоклав – бұл :",
+      "answer_options": [
+        "жоғары температура мен қысымда материалдарды залалсыздандыратын аппарат",
+        "бөлме температурасында материалдарды залалсыздандыратын аппарат",
+        "УК сәулесінің әсерімен материалдарды залалсыздандыратын аппарат",
+        "химиялық реактивтердің әсерімен материалдарды залалсыздандыратын аппарат",
+        "рентген сәулесінің әсерімен материалды залалсыздандырын аппарат"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_ds1j4uu_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 251,
+      "question_text": "Культуралды сұйықтықтан аз мөлшердегі БАЗ бөліп алу кезінде . . . қолданған тиімді",
+      "answer_options": [
+        "хромотографияны",
+        "флотирлеуді",
+        "булауды",
+        "фильтрлеуді",
+        "центрифуганы"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_fi2lqfj_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 252,
+      "question_text": "Булау қондырғысында залалсыздандыру:",
+      "answer_options": [
+        "кептіргішке қарағанда 5-7 есе арзан",
+        "кептіргішке қарағанда 6-8 есе арзан",
+        "биотехнологияда қолданылмайды 4-6",
+        "азықтық ашытқыны алуда қолдануға болмайды 3-5",
+        "экономикалық тұрғыдан тиімсіз 7-9"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_945zw02_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 253,
+      "question_text": "Культуралды сұйықтықтан өнімді келесі әдіспен бөліп алуға болмайды:",
+      "answer_options": [
+        "центрифугалау",
+        "лиофилизациялау",
+        "мұздату",
+        "кристализациялау",
+        "булау, кептіру"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_zvq40e2_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 254,
+      "question_text": "Ферментерге келіп түседі:",
+      "answer_options": [
+        "қоректік орта және таза культура",
+        "культуралы сұйықтық",
+        "минералды тұздар",
+        "су және қоректік орта",
+        "аммиакты су және культуральды сұйықтық"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_r2deiqd_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 255,
+      "question_text": "Түптік культивирлеу:",
+      "answer_options": [
+        "аса технологиялық",
+        "ескі әдіс",
+        "қатты ортада жүргізіледі",
+        "ашытқылар үшін қолданбайды",
+        "саңырауқұлақтар үшін қолданбайды"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_yh8qq9a_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 256,
+      "question_text": "Биотехнологияда ауа дайындау жүйесі келесіге бөлінеді:",
+      "answer_options": [
+        "4 топқа",
+        "екі топқа",
+        "гомогенді 3 топқа",
+        "аэробты 5 топқа",
+        "транспортты 6 топқа"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_z1fggmv_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 257,
+      "question_text": "Қоректік ортаны дайындауда шикізатты таңдауда мынаны ескермеуге болады:",
+      "answer_options": [
+        "ауа залалсыздандыру әдістері",
+        "микроорганизмдердің физиологиялық қажетсінуі",
+        "өндіріс технологиясын",
+        "культивирлеу кезіндегі қоректік заттардың шығыны",
+        "шикізаттың бағасын"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_42e4xd3_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 258,
+      "question_text": "Стерилизация температурасы жоғарлаған сайын онда:",
+      "answer_options": [
+        "стерилизация уақытысы аз болады",
+        "м.о. қолдануы үшін қолайлы",
+        "будың шығыны азаяды",
+        "қоректік ортаның қабілеті жақсы сақталады",
+        "алынған нәтиже қызық"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_3z8nxr0_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 259,
+      "question_text": "Жылумен залалсыздандырудың келесі қабілеттері:",
+      "answer_options": [
+        "қауіпсіздігі",
+        "эффективтілігі",
+        "экономды",
+        "қондырғының қарапайымдылығы",
+        "арзандылығы"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_t4ldaev_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 260,
+      "question_text": "Залалсыздандыру кезінде қоректік орта ішінде компоненттерді жақсы сақтау үшін:",
+      "answer_options": [
+        "залалсыздандыру температурасын жоғарылату",
+        "оларды бөлек залалсыздандыру",
+        "оларды залалсыздандырудан кейін енгізу",
+        "залалсыздандыру уақытын ұзарту",
+        "температураны төмендету және залалсыздандыру уақытын ұзарту"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_ff4mj9m_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 261,
+      "question_text": "Егер орта компоненттері жылумен залалсыздандыруға төзімсіз болса онда, оларды:",
+      "answer_options": [
+        "сәулелендірумен залалсыздандырады",
+        "бумен залалсыздандырады, бірақ сақтықпен",
+        "залалсыздандырмайды",
+        "қоректік ортаға залалсыздандыру алдында енгізеді",
+        "қоректік орта құрамына қолданбайды"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_97lq2x1_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 262,
+      "question_text": "Центрифугалау келесі заттың әсерімен жүреді:",
+      "answer_options": [
+        "центробеждік күш",
+        "центростемителдік күш",
+        "ауырлық күш",
+        "флотациялы",
+        "миграциялы"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_e7mwr87_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 263,
+      "question_text": "Культралды сұйықтықта оттегінің концентрациясын анықтауда мынадай әдісті пайдаланады:",
+      "answer_options": [
+        "электрохимиялық",
+        "химиялық",
+        "физикалық",
+        "реакциялық",
+        "адсорбциялық"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_jy610lz_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 264,
+      "question_text": "Микроағзаларды культивирлеу кезінде түзіледі:",
+      "answer_options": [
+        "ылғал көбік",
+        "құрғақ",
+        "оттегінің көп бөлігі",
+        "ірі ақуызды молекулалар",
+        "жоғары қысымды жерлер"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_tnsn6w1_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 265,
+      "question_text": "Қатты қоректік ортаны жылулық стерилизация жасау үшін мына әдісті қолдануға болмайды:",
+      "answer_options": [
+        "рентген сәулесін пайдалану",
+        "буды пайдалану",
+        "инфрақызыл сәулелерді пайдалану",
+        "жоғары қысымды қыздыру",
+        "электр қыздырғышы"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_irywge5_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 266,
+      "question_text": "Агар-агар дегеніміз, бұл:",
+      "answer_options": [
+        "теңіз балдырларынан алынатын полисахарид",
+        "азот құрамды заттардан алынған полисахарид",
+        "ақуыз гидролизінен алынатын полисахарид",
+        "көміртектен алынатын полисахарид",
+        "гельдік пластынан алынатын полисахарид"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_w32ccg0_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 267,
+      "question_text": "Қоректік ортада м.о. өсіру не деп аталады:",
+      "answer_options": [
+        "культивирлеуі",
+        "ауыстырып егу",
+        "суспензия",
+        "колония",
+        "субкультивирлеу"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_cq784nf_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 268,
+      "question_text": "Жабық үздіксіз культура жүйесіне периодты беріледі:",
+      "answer_options": [
+        "жаңа қоректік орталар",
+        "дистилденген су",
+        "м.о",
+        "жеке зат",
+        "поливинильді спирт"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_8f3tr37_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 269,
+      "question_text": "М.О. қатты қоректік ортада өсіруді ашқан кім:",
+      "answer_options": [
+        "Р.,Кох",
+        "Л.Пастер",
+        "А.Левенгук",
+        "Н.Вовилов",
+        "Гаррисон"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_pijwn5c_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 270,
+      "question_text": "Қоректік ортаны автоклавта мына температурада стерилдейді:",
+      "answer_options": [
+        "1200С",
+        "1630С",
+        "1030С",
+        "670С",
+        "430С"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_y15vg6z_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 271,
+      "question_text": "Қоректік ортаны жоғары қысымда қанша уақыт стерилдейді:",
+      "answer_options": [
+        "18-20 мин",
+        "3-5 мин",
+        "35-45 мин",
+        "121-143 мин",
+        "45-47 мин"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_kg755l6_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 272,
+      "question_text": "Стерилизация дегеніміз не:",
+      "answer_options": [
+        "қыздыру 120-160 0С жүреді",
+        "қыздыру 120-1800С жүреді",
+        "қыздыру 110-1800С жүреді",
+        "қыздыру 130-1800С жүреді",
+        "қыздыру 140-1600С жүреді"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_u73z30y_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 273,
+      "question_text": "Балдырлардан алынатын зат және қоректік орта дайындауға қолданылады:",
+      "answer_options": [
+        "агар",
+        "крахмал",
+        "желатин",
+        "силикагель",
+        "қант"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_66muwgs_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 274,
+      "question_text": "Автоклавта стерилизациялау әдісі не деп аталады:",
+      "answer_options": [
+        "бумен стерилдеу",
+        "пастерилизация",
+        "қайнату",
+        "тиндализация",
+        "фламбирлеу"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_fkee8eg_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 275,
+      "question_text": "Ыдыстарды және қоректік ортаны жоғары қысыммен, бумен стерилдейтін құрылғы не деп аталады:",
+      "answer_options": [
+        "автоклав",
+        "качалка",
+        "кептіргіш шкаф",
+        "микроскоп",
+        "кох қайнатпасы"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_xal23vk_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 276,
+      "question_text": "Жұмыстық көлемде берілген температураны ұстап тұрушы зат:",
+      "answer_options": [
+        "термостат",
+        "потенциостат",
+        "биореактор",
+        "петри табақша",
+        "микроскоп"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_ykw2qz1_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 277,
+      "question_text": "Тірі м.о –ден қандай да бір материалдың толық босауы:",
+      "answer_options": [
+        "стерилизация",
+        "центрифугалау",
+        "культивирлеу",
+        "субкультивирлеу",
+        "перегонка"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_aiex9hk_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 278,
+      "question_text": "Пастерилизация мынадай температурада жүреді:",
+      "answer_options": [
+        "60-800С, 20-40 мин",
+        "70-900С, 20-40 мин",
+        "80-1000С, 10-20 мин",
+        "20-400С, 20-30мин",
+        "50-600С, 20-40мин"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_oi1bkn4_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 279,
+      "question_text": "Егер пастерилизацияны 800С, 20 минут жүргізсе, онда:",
+      "answer_options": [
+        "м.о. толық жойылмайды",
+        "барлық м.о. жойылады",
+        "м.о. өлуі бірден жүгеге аспайды",
+        "ашытқылар өлмейді",
+        "рН төмендейді"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_a704yqy_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 280,
+      "question_text": "Егер өнімді 120-1600С, 20-60минут қалдырса, онда мұндай процес:",
+      "answer_options": [
+        "стерилизация",
+        "айдау",
+        "тұндыру",
+        "микроскоп",
+        "кептіру"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_852para_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 281,
+      "question_text": "Стерилизация кезінде:",
+      "answer_options": [
+        "барлық м.о. жойылады",
+        "вегетативті жасушалар қалуы мүмкін",
+        "споралар қалуы мүмкін",
+        "споралар қалыпты",
+        "қыздыру бірқалыпты жүреді"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_h9aode2_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 282,
+      "question_text": "Практика жүзінде ультра фиолет- сәулесі қолданылады және не деп аталады:",
+      "answer_options": [
+        "бактерицидті БУВ -15",
+        "сәулелік МБИ-1",
+        "электрондық МБИ-1",
+        "электрондық",
+        "қарапайым"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_qmtaiys_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 283,
+      "question_text": "Антибиотиктердің қасиеті:",
+      "answer_options": [
+        "спецификалығы",
+        "м.о-ге қолайлы жағдайы",
+        "бактерияға қолайлы жағдай",
+        "микробка қолайлы жағдай",
+        "вирусқа қолайлы жағдай"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_ql3t8ff_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 284,
+      "question_text": "Культивирлеу үшін қоректік орта ретінде қолданылмайды.",
+      "answer_options": [
+        "су",
+        "крахмал",
+        "меласса",
+        "этанал",
+        "дұрыс жауап жоқ"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_gk6x6vg_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 285,
+      "question_text": "Оптикалық прибор,жай көзге көрінбейтін м.",
+      "answer_options": [
+        "клеткасын зерттеуге арналған: А) микроскоп",
+        "ферментер",
+        "РН-метр",
+        "термостат",
+        "вакуум-насос"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_r79h7mw_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 286,
+      "question_text": "Қоректік орталарды,ыдыстарды және басқа құралдарды залалсыздандыруға арналған және қаныққан бу қысымымен жүретін құрылғы:",
+      "answer_options": [
+        "автоклав",
+        "термостат",
+        "микроскоп",
+        "ферментер",
+        "РН-метр"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_7ia8wuq_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 287,
+      "question_text": "М.",
+      "answer_options": [
+        "егуге және залалсыздандырылу жағдайларын қажет ететін жұмыстарды жүргізуге арналған бөлме: А) бокс",
+        "виварий",
+        "автоклав",
+        "термостатты",
+        "ортаны қайнату"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_hqcl6lk_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 288,
+      "question_text": "Заласыздандыруға арналған бөлме:",
+      "answer_options": [
+        "автоклав",
+        "термостат",
+        "ортаны қайнату",
+        "бокс",
+        "виварий"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_6fwueyh_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 289,
+      "question_text": "Қоректік ортаны дайындауға арналған бөлме:",
+      "answer_options": [
+        "ортаны қайнату",
+        "термостатты",
+        "бокс",
+        "виварий",
+        "автоклавты"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_061wcml_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 290,
+      "question_text": "Жай көзге көрінбейтін кең таралған ағзалар тобы:",
+      "answer_options": [
+        "микроағзалар",
+        "жоғары өсімдіктер",
+        "ассоциациялар",
+        "протопласттар",
+        "каллус"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_q721kdv_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 291,
+      "question_text": "Микроағзаларды культивирлеу ортасын оттегімен қанықтыру:",
+      "answer_options": [
+        "аэрация",
+        "центрифугалау",
+        "фильтрлеу",
+        "диализ",
+        "кептіру"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_9r2ncqu_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 292,
+      "question_text": "Асептика ережелерін қадағалауды қамтамасыз ететін және м.",
+      "answer_options": [
+        "және басқа да обькттермен жұмыс істеуде техникалық қауіпсіздікті қамтамасыз ететін жабық көлем: А) бокс",
+        "автоклав",
+        "термостатты",
+        "виварий",
+        "ортаны қайнату"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_5ry8e8n_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 293,
+      "question_text": "ҚҰрамы мен қасиеттеріне қарай қоспаларды бөлуді динамикалық жағдайларда сорбционды әдістермен бөлу:",
+      "answer_options": [
+        "хромотография",
+        "адсорбция",
+        "абсорбция",
+        "центрифугалау",
+        "диссоциация"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_xxzc2b8_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 294,
+      "question_text": "Біртекті емес жүйелерді (сұйықтық және қатты дене) орталықтандырылған күш көмегімен бөлу:",
+      "answer_options": [
+        "центрифугалау",
+        "хромотография",
+        "электродиализ",
+        "осмос",
+        "диссоциация"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_0k3id3a_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 295,
+      "question_text": "Негізгі өндірісіне залалсыздандырылмаған шикізаттың түсуінің алдын-алу мақсатында,басқа бөлмелерге қарағанда изолирленген:",
+      "answer_options": [
+        "қ.о дайындау цехы",
+        "өсіру цехы",
+        "таза культура цехы",
+        "барлық жауап дұрыс",
+        "дұрыс жауабы жоқ"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_qug2pa5_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 296,
+      "question_text": "100°С ағымдағы буда бөлшектеп залалсыздандыру әдісі:",
+      "answer_options": [
+        "тиндализация",
+        "пастерилизация",
+        "сублимация",
+        "ассимиляция",
+        "аэрация"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_sd7zp18_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 297,
+      "question_text": "Тірі ағзада ауру тудыратын микроағза:",
+      "answer_options": [
+        "патоген",
+        "цианобактериялар",
+        "бактериялар",
+        "дұрыс жауабы жоқ",
+        "антигендер"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_yexzuir_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 298,
+      "question_text": "Автоклав бұл :",
+      "answer_options": [
+        "артық қысым және жоғарғы температурада материялдар стерилизациясы өтетін қондырғы",
+        "бөлме темопературада материялдар стерилизациясы өтетін қондырғы",
+        "Ултра күлгін сәулелері арқылы материял стерилизациясы жүретін аппарат",
+        "химия лық реактивтер әсерінен материял стерилизациясы жүретін аппарат",
+        "биологиялық реактивтер әсерінен материял стерилизациясы жүретін аппарат"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_d9c36n0_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 299,
+      "question_text": "Биофильтр – бұл",
+      "answer_options": [
+        "Биологиялық тазартуға арналған қондырғы",
+        "фильтр-пресс суды тазалауға арналған",
+        "вакуумды-фильтр суды тазалауға арналған",
+        "барлық бактерияларды ұстап қалатын фильтр",
+        "биологиялық сұйықтықты фильтрлеу"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
+    },
+    {
+      "id": "q_68vfyqo_mwqsiorl",
+      "test_id": "file_4fqm72j_mwqsiorl",
+      "original_question_number": 300,
+      "question_text": "Инокулятор – бұл :",
+      "answer_options": [
+        "таза культураны көбейтуге арналған реакторлар",
+        "өндірістік штамдарды көбейтуге арналған ферментер",
+        "химиялық процесс реакторы",
+        "егу материалының кептіргіші болып табылады",
+        "егу материалының сепараторы"
+      ],
+      "correct_answer": 0,
+      "created_at": "22.11.2026",
+      "updated_at": "22.11.2026"
     }
   ]
 }
